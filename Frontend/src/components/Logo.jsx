@@ -1,10 +1,10 @@
 import React from 'react'
-import logo from '../assets/ScriptDev.png'
+import logo from '../assets/logo.png'
 
 function Logo() {
   return (
     <div>
-      <img className='w-16 rounded-xl' src={logo} alt="" />
+      <img className='w-16 rounded-sm' src={logo} alt="" />
     </div>
   )
 }
