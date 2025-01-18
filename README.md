@@ -1,3 +1,4 @@
+```javascript
 app.post('/proxy', async (req, res) => {
     const authHeader = req.headers.authorization;
     
@@ -21,3 +22,4 @@ app.post('/proxy', async (req, res) => {
         res.status(500).json({ error: error.message });
     }
 });
+```
