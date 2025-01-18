@@ -10,7 +10,7 @@ const AboutPage = () => {
     {
       name: "Aman Jaiswal",
       role: "Full Stack Developer",
-      image: "https://via.placeholder.com/", // Replace with actual image URL
+      image: "/src/assets/aman.jpg", // Replace with actual image URL
     },
     {
       name: "Rohit Rathod",
