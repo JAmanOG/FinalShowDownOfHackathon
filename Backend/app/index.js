@@ -3,11 +3,13 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const { getFitnessVideosSortedByViews } = require('./ytapi');
 const analyzeReddit = require('./hungface');
-const { scrapeQuora } = require('./qoura');
-// const fetch = require('node-fetch');
+const { scrapeQuora } = require('./qouracopy');
+require('dotenv').config();
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
+const AUTH_HEADER = process.env.AUTH_HEADER;
+const LANGFLOW_URL = process.env.LANGFLOW_URL;
 
 app.use(cors());
 
@@ -52,6 +54,7 @@ app.post('/fitness-videos', async (req, res) => {
 
 app.post('/reddit-analysis', async (req, res) => {
     const { niche } = req.body;
+    console.log("getting the niche ", niche);
     const results = await analyzeReddit(niche);
     console.log(results);
     res.json(results);
