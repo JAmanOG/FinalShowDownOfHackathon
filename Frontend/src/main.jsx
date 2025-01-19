@@ -1,3 +1,4 @@
+
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
@@ -7,12 +8,14 @@ import  Home  from './pages/Home.jsx'
 import  DashBoard from './pages/DashBoard.jsx'
 import  PdfDownloder  from './pages/PdfDownloder.jsx'
 import AboutPage from './pages/About.jsx'
+import InputPage from './pages/InputPage.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App/>}>
       <Route path='/' element={<Home/>} />
       <Route path='/dashboard' element={<DashBoard/>} />
+      <Route path='/input' element={<InputPage/>} />
       <Route path='/pdf' element={<PdfDownloder/>} />
       <Route path='/about' element={<AboutPage/>} />
     </Route>

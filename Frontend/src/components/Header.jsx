@@ -13,6 +13,10 @@ function Header() {
       icon : <Home/>,
       nav : '/'
     },{
+      name : 'Input',
+      icon : <InfoIcon/>,
+      nav : '/input'
+    },{
       name : 'Dashboard',
       icon : <LayoutDashboard/>,
       nav : '/dashboard'

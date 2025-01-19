@@ -18,7 +18,7 @@ const Home = () => {
           </p>
           <div className="mt-8">
             <Link
-              to="/dashboard"
+              to="/input"
               className="inline-flex items-center px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow hover:bg-gray-100 transition"
             >
               Get Started
