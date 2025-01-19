@@ -44,7 +44,7 @@ const DashBoard = ({ outputState }) => {
   const sections = parseData(raw);
 
   return (
-    <div className="p-8 bg-gradient-to-br z-50 w-full  from-indigo-50 via-white to-indigo-100 min-h-screen font-sans">
+    <div className="p-8 bg-gradient-to-br z-50 w-full h-full from-indigo-50 via-white to-indigo-100 min-h-screen font-sans">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-5xl font-extrabold text-center mb-12 text-indigo-800 tracking-tight">
           Dashboard Insights
