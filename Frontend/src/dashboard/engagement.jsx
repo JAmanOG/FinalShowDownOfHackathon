@@ -1,6 +1,7 @@
 import React from "react";
 
-const App = () => {
+const dashboard = (dataState) => {
+  console.log("data",dataState)
   // Parse the raw string into sections
   const parseData = (dataString) => {
     const sections = dataString.split("---").map((section) => {
@@ -12,7 +13,7 @@ const App = () => {
     return sections;
   };
 
-  const sections = parseData(rawData);
+  const sections = parseData(dataState);
 
   // Render a section dynamically
   const renderSection = ({ title, content }, index) => (
@@ -49,4 +50,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default dashboard;
