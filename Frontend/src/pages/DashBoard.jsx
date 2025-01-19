@@ -1,4 +1,5 @@
 import React from "react";
+import Container from "../components/Container";
 
 const DashBoard = ({ outputState }) => {
   const raw = outputState?.outputs[0]?.outputs[0]?.results?.message?.text || "";
