@@ -2,7 +2,6 @@ import React from 'react';
 import { data } from "../../constant";
 
 const DashBoard = (dataState) => {
-  console.log("data", dataState);
   const raw = data.dataState.dataState.outputs[0].outputs[0].results.message.data.text;
 
   // Parsing and cleaning the raw data into sections
