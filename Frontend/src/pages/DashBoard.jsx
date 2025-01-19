@@ -1,9 +1,9 @@
 import React from 'react'
-
+import Layout from '../dashboard/layout'
 function DashBoard() {
   return (
     <div>
-      hi
+      <Layout/>
     </div>
   )
 }
