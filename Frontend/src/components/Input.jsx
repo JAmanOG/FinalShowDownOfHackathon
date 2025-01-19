@@ -13,9 +13,9 @@ const SearchForm = () => {
 
   const platforms = [
     { value: 'reddit', label: 'Reddit', icon: '🔴', color: 'bg-gradient-to-r from-orange-500 to-red-500' },
-    { value: 'google-trends', label: 'Google Trends', icon: '📈', color: 'bg-gradient-to-r from-blue-500 to-green-500' },
+    // { value: 'google-trends', label: 'Google Trends', icon: '📈', color: 'bg-gradient-to-r from-blue-500 to-green-500' },
     { value: 'quora', label: 'Quora', icon: '❓', color: 'bg-gradient-to-r from-red-500 to-pink-500' },
-    { value: 'youtube', label: 'YouTube', icon: '▶️', color: 'bg-gradient-to-r from-red-600 to-red-700' }
+    // { value: 'youtube', label: 'YouTube', icon: '▶️', color: 'bg-gradient-to-r from-red-600 to-red-700' }
   ];
 
   const handleInputChange = (e) => {
@@ -52,6 +52,8 @@ const SearchForm = () => {
   };
 
   const selectedPlatform = platforms.find(p => p.value === formData.platform);
+
+  console.log(selectedPlatform);  
 
   return (
     <div className="min-h-screen bg-gray-50 p-8 flex items-center justify-center">
