@@ -1,164 +1,135 @@
-export const data = `
-### **User Pain Points Analysis**  
+export const data = {
+    "dataState": {
+        "dataState": {
+            "session_id": "63c9f7ca-90a2-4854-9342-6b826d5ad32d",
+            "outputs": [
+                {
+                    "inputs": {
+                        "input_value": "[\"When compared to any other indian edtech firms byju's stands ahead of them in all the possible ways like Funds, subscribers, more courses and also with most advanced technology t experience the students to even understand the tough concepts! This is how byju's shaping up the whole indian education standards :-)\",\"Currently both are good industries as both are growing depends upon what you like  Edutech is an industry which will never have recession but a word of caution in this industry you need to keep on upgrading yourself  More dilipmotiani@gmail.com\",\"Yes you can.  I have seen my batchmate who after his MBA started with industrial products, then with electronics and then got into FMCG.  See industry may be differ but ur skills remains the same.  U can keep searching robustly n try connecting people from the industry.  Follow HR-Menting\",\"Mr. Ashok Soota, one of the pioneers of the Indian IT. He led Wipro, founded Mindtree, and then founded Happiest Minds.  Happiest Minds Technologies Limited (Happiest Minds), a Mindful IT Company, applies agile methodologies to enable digital transformation for enterprises and technology providers by delivering seamless customer experience, business efficiency, and actionable insights.  They are a New Age IT company with Vast business.  Business  Big Data Analytics AI Cognitive Computing Internet of Things Cloud Security SDN-NFV Blockchain Automation including RPA  Their product engineering is vast and covers some of the fastest growing sectors. Clients in the fast pace and fast-growing sector give the advantage for the company to grow fast.  Product Engineering Digital Business Solutions Infrastructure Management Security Services Retail Edutech Industrial BFSI Hi-tech Engineering R&D Manufacturing Travel Media Entertainment  As of June, it has 148 active customers and its repeat business has steadily grown contributing a large chunk of the business. The promoter has earlier managed the large conglomerate and also known as people’s person which is an added advantage keeping in mind that the main asset of this business is the people.  Happiest Minds business is divided into the 3 Business Units (BUs):  Digital Business Services (DBS): Product Engineering Services (PES): Infrastructure Management & Security Services (IMSS)  PARTNERS  Happiest Minds partner with global ISVs to develop its offerings  Microsoft Amazon Web Services Intel IBM McAfee Netsuite Salesforce Cloudlending Pimcore Mindsphere ThingWorx PTC Mulesoft Talend Appian UIPath AutonomIQ Magento Checkpoint Saviynt ManageEngine CloudFabrix OKTA BluSapphire Onelogin.  (Source: Frost & Sullivan Report)  GREY MARKET PREMIUM  The Grey market premium is also positive for those who want to invest for listing gains.  Date: 7 to 9 September 2020 Lot Size: 90 shares Price Band: 165-166 GMP: 110+  UPDATE  Anchor Investors  Listing Update  Stellar Returns on listing.  Hope you made money from this IPO  If you enjoyed this post, I’d be very grateful if you’d help it spread by emailing it to a friend or sharing it on Twitter or Facebook. Upvote & Share on Quora. Thank you!\",\"I have been in the Edutech industries for a long time now even Before the pandemic COVID-19 Because People say LOCKDOWN gave birth and growth for the ONLINE EDUCATION and many other platforms, Well as I know we have Technologies and was in use in many places, But People started using them when there was no other safer way to learn and teach, hence many Institution and educations org start implementing the Technology with educations.  Learning platforms like upGrad, RineX, and other Edutech companies, are focused on improving the actual requirement of the I.T and MNC and many other Industries' Knowledge and skills which a student must have when he is graduated so companies can offer better Placements and packages (in overall concept the Practical skills) and also letting students have new technologies and Industry Exposer by making them work in their respective core companies.  0\",\"Most investors in Indian edtech businesses such as Byju's, Toppr, and Embibe believe that the edutech industry in India is still in its infancy and that additional players will enter the market in the following years. One of the primary drivers of the massive investment in the ed- tech sector is the country's growing population and declining literacy rate.\",\"Hey, I am working as a Mindler Intern and want you to know about the internships you can apply just after finishing 12th.  Mindler, India’s leading name career counselling and the EduTech industry, is bringing to you the World’s Largest Internship Drive for 12th Class Students, and we want the maximum number of students to make the most of this once in a blue moon opportunity.  You can later get scholarships up to 100% which can be used for your college admissions.  Looking forward to a positive response.\",\"1. Happiest Minds IPO is good one and apply.  2. Management is s very good and good track Record  3. Mainly into the Digital Skills Technology Sector  4. Currently running sector in the Markets  5. Into edutech industry experience  6. The promoters are previous Mindtree company  7. So one can apply for Happiest Minds for listing gains  8. One can hold for the Medium Term Investing for good gains  **TVRAMANASTOCK MIOD NCCMP NISM NCFM AMFI**  A SEBI Certified Investment Advisor with 20 Years Experience  A Hobby to Passion to Professional Investment Advisor\",\"Incorporated in 2011, Positioned as \\\"Born Digital. Born Agile\\\" Happiest Minds Ltd is a Bangalore based IT service provider company. The business of the company is divided into three categories; Digital Business Service (DBS), Product Engineering Service (PES) and Infrastructure and Management Security Service ( IMSS).  The DBS unit offers digital application development & modernisation, assistance in designing & testing of operations, management of the platform, consulting and domain led offerings.  PES unit helps by transforming the potential of digital by making the product secure and smart. Wherein, IMSS provides an end to end monitoring and management capability for applications and infrastructure of the clients.  As of June 30, 2020, Happiest Minds had 148 active customers and has a global presence in countries like US, UK, Australia, Canada and the Middle East. The business units of the company is assisted by the 3 Centres of Excellence which are Internet of Things, Analytics / Artificial Intelligence, and Digital Process Automation. In Fiscal 2020, 96.9% of the company's revenues came from digital services which is one of the highest among Indian IT companies.  Happiest Minds delivers services across industry sectors such as Retail, Edutech, Industrial, BFSI, Hi-Tech, Engineering R&D, Manufacturing, Travel, Media and Entertainment.  Competitive Strengths  1. Focused on software product development 2. Strong Brand in offering Digital IT services 3. End to End digital lifecycle 4. Agile Engineering and Delivery\",\"Hi Mr Garg.  As we all know the global proliferation of COVID-19 pandemic has lead to abrupt closure of universities, schools, colleges, offline coaching centers etc to an uncertain period to shield the population from the viral contamination. Though with the passage of time the world is coming in terms with this pandemic and trying hard to restore things to normal pace but that is a long and tedious walk.  The onset of coronavirus virus laid the groundwork for the boom of a hitherto auxiliary online edutech industry. You must have read in various newspaper that edtech sector has emerged as the hot sector with Byju’s raising $400 million and Unacademy raising $100 million in the first quarter of 2020. According to a KPMG report - online coaching has seen a massive boost since lockdown. Almost every other online platform has opened up its content for free making it accessible for all students. Even in a challenging environment, edtech is expected to remain a very hot sector of VC investment.  Online coaching is on-demand, convenient and personalized. Every thing is available just in a matter of few seconds. Covid-19 has increased the digital transformation of the tutoring industry forcing individual tutors to adopt advanced technology to increase their reach and teach with more advanced methods. So as by now, going by the trend, online coaching industry has a good future to thrive as its consumption is increasing day by day. Also the law of supply and demand states- when demand exceeds supply, prices tend to rise and going by recent trend online coaching demand is sure-shot to increase thus escalating its revenue curve definitely.\",\"Now, the 21st century world is heading towards a brand new era of machine learning and it's functioning. In this era, we are able to speak to the machines, working for us, to improve their operations and modify them according to our needs. Artificial Intelligence is a ‘human-like-man-made-invention’ which will be capturing the whole world. Robotics is capable of spreading across the industries and trade practises, thus, replacing 65% of the existing jobs in next 7 years (researched based fact). All this directs our attention towards the alarming need of technically equipped minds as workforce in the coming decade in every evolving sector, around the globe.  So, the hidden agenda is to prepare 21st century kids with the most important invention that will prepare & equip them to contribute in the upcoming revolution.  This demands the requirement of a platform and a teaching window for our kids which can open up their mind to envision themselves as the prospect future of our globe. The current wave of Edutech industry is transforming itself under the leadership of Karan Bajaj (EX-CEO of Discovery channel) and the contributions initiated by his global online 1-1 teaching startup - Whitehat Jr. It's the only company with an academically designed coding teaching pedagogy for kids which is growing at an exponential rate of 50% per month. You can access more information on their website\",\"Parents and teachers are aware of the many benefits of coding or programming for kids and students. Among other benefits, kids learn computational thinking, problem solving, and prepares them for skills needed in a world that is increasingly dependent on technology ran by computer programs behind the scenes.  When kids are introduced to coding, they gain appreciation of how digital technology work. Digital technology is a big part of many kids’ lives, as they are surrounded by smart phones, video games, video entertainment, websites, and even robots. What drives this technology are software or computer programs that are created by coding.  Like learning about biology and chemistry, it is important for kids to understand the building blocks of an integral part of their life. They need to realize that what happens when they use technology is not magic, and they themselves can create programs that can be useful.  Keep in mind though that every child is different. Some kids take a larger amount of time to learn the concepts while others who are naturally inclined to computational thinking breeze through learning even at a young age.  Childs’ brain is self-observant in learning the linguistic & gestural languages which is used in his/her surroundings to communicate his mind, right after their birth. Its a process of behavioural adaptation of the knowledge unconsciously ringing in kids’ ears, which helps childs’ brain to apply the basic of their respective native language.  Similarly, starting from the basic is the most effective and efficient process to start with.  Similarities - There is not much difference in both the process of learning this language of computers to that of learning their native language, for child's brain. But, the methods pursued by most of the undergrad educators in the edutech industry has overlooked this most important feature of teaching a practical language like coding. Instead, we can focus on the methods of an organisation which has developed world's first online “coding” teaching pedagogy for kids - Whitehat Jr.  We can focus on the methods of an organisation which has developed world's first online “coding” teaching pedagogy for kids - Whitehat Jr.  Whitehat Jr - This works under the leadership of - Founder and CEO Karan Bajaj (EX-CEO of Discovery channel). The organisation is growing at an exponential rate of 50% per month. You can check more on the company website!\",\"Thanks for A2A Milind Joshi sir.  The argument of Raghuram Rajan was we should build manufacturing and infra but most of OECD countries have Services as the their biggest contributor to GDP, India also has a similar strength. I partially agree his statement we can't make infrastructure as fast as China due to laws and different policy takes lot of time. It is better to build infrastructure and work on our strength like IT. We can expand into sectors like Banking and Edutech as the youth coming in the sectors won't like to work as low skill labours in manufacturing sector.  If a country has a good section of educated people they can pretty much drive the economy in every sector. We can do both. We need agricultural manufacturing capacities like fertilizers, industrial and manufacturing growth to propele and sustain our population needs.  Anugrhitoasmi 💛\"]"
+                    },
+                    "outputs": [
+                        {
+                            "results": {
+                                "message": {
+                                    "text_key": "text",
+                                    "data": {
+                                        "timestamp": "2025-01-19T03:39:08",
+                                        "sender": "Machine",
+                                        "sender_name": "AI",
+                                        "session_id": "63c9f7ca-90a2-4854-9342-6b826d5ad32d",
+                                        "text": "### **User Pain Points Analysis**  \n\n#### **Mental Health**  \n- **Issues:**  \n  - Anxiety  \n  - Stress  \n  - Obsessive perfectionism  \n- **Impact Scale:**  \n  - **Mental Health Impact:** 60%  \n\n#### **Work-Life Balance**  \n- **Challenges:**  \n  - Time management issues  \n  - Performance pressure  \n  - Career-life conflict  \n- **Impact Scale:**  \n  - **Work-Life Balance Impact:** 55%  \n\n#### **Health Concerns**  \n- **Key Problems:**  \n  - Chronic diseases  \n  - Lifestyle diseases  \n  - Limited self-care time  \n- **Impact Scale:**  \n  - **Physical Health Impact:** 50%  \n\n#### **Emotional Management**  \n- **Challenges:**  \n  - Fear of criticism  \n  - Burnout symptoms  \n  - Emotional overwhelm  \n\n---\n\n### **Sentiment Analysis**  \n\n#### **Overall Sentiment Distribution**  \n- **Positive:** 55%  \n- **Negative:** 20%  \n- **Neutral:** 25%  \n\n#### **Emotional Categories**  \n- **Positive Emotions:**  \n  - Hope (Intensity: 80%)  \n  - Inspiration  \n  - Motivation  \n- **Negative Emotions:**  \n  - Anxiety (Intensity: 60%)  \n  - Stress  \n  - Frustration  \n- **Neutral Emotions:**  \n  - Curiosity (Intensity: 70%)  \n  - Interest  \n  - Skepticism  \n\n---\n\n### **Engagement Analysis**  \n\n#### **Effective Hooks**  \n- \"Byju's stands ahead of other Indian edtech firms in all possible ways.\"  \n  - **High engagement rate**  \n- \"The edutech industry is expected to remain a hot sector of VC investment.\"  \n  - **Most shared**  \n\n#### **Call-to-Action Performance**  \n- \"Apply for Happiest Minds IPO for listing gains.\"  \n  - **70% conversion**  \n- \"Invest in edutech industry for good gains.\"  \n  - **60% conversion**  \n- \"Explore online coaching opportunities for better education.\"  \n  - **55% conversion**  \n\n#### **Content Format Performance**  \n- **Personal Stories:**  \n  - Highest engagement rate among all content formats (80%)  \n  - **User retention rate:** 80%  \n- **Listicles:**  \n  - Most shared content format (70%)  \n  - **Share rate:** 70%  \n- **Infographics:**  \n  - Highest information retention rate (75%)  \n  - **Comprehension rate:** 75%  \n\n---\n\n### **Competitor Analysis**  \n\n#### **Market Share Breakdown**  \n- **Edutech Companies:**  \n  - Market Share: 40%  \n  - Growth Rate: 30%  \n- **IT Service Providers:**  \n  - Market Share: 30%  \n  - Growth Rate: 25%  \n- **Online Coaching Platforms:**  \n  - Market Share: 20%  \n  - Growth Rate: 20%  \n- **Education Institutions:**  \n  - Market Share: 10%  \n  - Growth Rate: 15%  \n\n---\n\n### **Our Key Differentiators**  \n- **Personalized Approach:** Tailored solutions for individual education needs  \n- **Edutech Focus:** Comprehensive edutech support  \n- **Prevention First:** Early intervention and preventive education  \n- **Tech Integration:** Advanced digital education solutions  \n\n---\n\n### **Industry Trends & Patterns**  \n\n#### **Edutech Industry Trends**  \n- **Online Coaching:** 80% market growth in online coaching solutions  \n- **Digital Education:** 70% users prefer digital education  \n- **Edutech Investment:** 90% increase in edutech investment  \n\n#### **User Behavior Patterns**  \n- **Edutech Content Interest:** ↑ 65% (Year-over-year growth in content engagement)  \n- **Personalization Demand:** ↑ 80% (Users seeking personalized education)  \n- **Digital Tool Adoption:** ↑ 75% (Increase in edutech app usage)  \n\n#### **Environmental Edutech Impact**  \n- **Sustainability Focus:** 70% users prioritize eco-friendly education solutions  \n- **Green Practices:** 85% increase in sustainable edutech products  \n- **Environmental Education:** 90% concerned about environmental education impact  \n\n---\n\n### **Visualized Insights**  \n\n#### **Top Edutech Trends**  \n- Online Coaching: 80%  \n- Digital Education: 75%  \n- Edutech Investment: 70%  \n\n#### **User Engagement Metrics**  \n- **Average Time Spent:** ↑ 40% (10 minutes per session)  \n- **Click-through Rate:** ↑ 30% (4.5% average CTR)  \n- **Content Shares:** ↑ 25% (2.5K monthly average)  \n\n---\n\n### **Global Edutech Market**  \n- **North America:** 35% market share  \n- **Europe:** 28% market share  \n- **Asia Pacific:** 25% market share  \n- **Rest of World:** 12% market share  \n\n---\n\n### **Edutech Analytics Reports**  \n\n#### **Monthly Summary**  \n- **Active Users:** ↑ 10K  \n- **Engagement Rate:** ↑ 60%  \n- **Content Views:** ↑ 40K  \n\n#### **Demographics**  \n- **Age 18-34:** 45%  \n- **Age 35-54:** 35%  \n- **Age 55+:** 20%  \n\n#### **Content Performance**  \n- Edutech Tips: **85% CTR**  \n- Digital Education: **80% CTR**  \n- Online Coaching: **75% CTR**",
+                                        "files": [],
+                                        "error": false,
+                                        "edit": false,
+                                        "properties": {
+                                            "text_color": "",
+                                            "background_color": "",
+                                            "edited": false,
+                                            "source": {
+                                                "id": "GroqModel-1mxi2",
+                                                "display_name": "Groq",
+                                                "source": "llama-3.1-8b-instant"
+                                            },
+                                            "icon": "Groq",
+                                            "allow_markdown": false,
+                                            "state": "complete",
+                                            "targets": []
+                                        },
+                                        "category": "message",
+                                        "content_blocks": [],
+                                        "id": "4d4b358a-4185-4b50-be90-489be091056e",
+                                        "flow_id": "63c9f7ca-90a2-4854-9342-6b826d5ad32d"
+                                    },
+                                    "default_value": "",
+                                    "text": "### **User Pain Points Analysis**  \n\n#### **Mental Health**  \n- **Issues:**  \n  - Anxiety  \n  - Stress  \n  - Obsessive perfectionism  \n- **Impact Scale:**  \n  - **Mental Health Impact:** 60%  \n\n#### **Work-Life Balance**  \n- **Challenges:**  \n  - Time management issues  \n  - Performance pressure  \n  - Career-life conflict  \n- **Impact Scale:**  \n  - **Work-Life Balance Impact:** 55%  \n\n#### **Health Concerns**  \n- **Key Problems:**  \n  - Chronic diseases  \n  - Lifestyle diseases  \n  - Limited self-care time  \n- **Impact Scale:**  \n  - **Physical Health Impact:** 50%  \n\n#### **Emotional Management**  \n- **Challenges:**  \n  - Fear of criticism  \n  - Burnout symptoms  \n  - Emotional overwhelm  \n\n---\n\n### **Sentiment Analysis**  \n\n#### **Overall Sentiment Distribution**  \n- **Positive:** 55%  \n- **Negative:** 20%  \n- **Neutral:** 25%  \n\n#### **Emotional Categories**  \n- **Positive Emotions:**  \n  - Hope (Intensity: 80%)  \n  - Inspiration  \n  - Motivation  \n- **Negative Emotions:**  \n  - Anxiety (Intensity: 60%)  \n  - Stress  \n  - Frustration  \n- **Neutral Emotions:**  \n  - Curiosity (Intensity: 70%)  \n  - Interest  \n  - Skepticism  \n\n---\n\n### **Engagement Analysis**  \n\n#### **Effective Hooks**  \n- \"Byju's stands ahead of other Indian edtech firms in all possible ways.\"  \n  - **High engagement rate**  \n- \"The edutech industry is expected to remain a hot sector of VC investment.\"  \n  - **Most shared**  \n\n#### **Call-to-Action Performance**  \n- \"Apply for Happiest Minds IPO for listing gains.\"  \n  - **70% conversion**  \n- \"Invest in edutech industry for good gains.\"  \n  - **60% conversion**  \n- \"Explore online coaching opportunities for better education.\"  \n  - **55% conversion**  \n\n#### **Content Format Performance**  \n- **Personal Stories:**  \n  - Highest engagement rate among all content formats (80%)  \n  - **User retention rate:** 80%  \n- **Listicles:**  \n  - Most shared content format (70%)  \n  - **Share rate:** 70%  \n- **Infographics:**  \n  - Highest information retention rate (75%)  \n  - **Comprehension rate:** 75%  \n\n---\n\n### **Competitor Analysis**  \n\n#### **Market Share Breakdown**  \n- **Edutech Companies:**  \n  - Market Share: 40%  \n  - Growth Rate: 30%  \n- **IT Service Providers:**  \n  - Market Share: 30%  \n  - Growth Rate: 25%  \n- **Online Coaching Platforms:**  \n  - Market Share: 20%  \n  - Growth Rate: 20%  \n- **Education Institutions:**  \n  - Market Share: 10%  \n  - Growth Rate: 15%  \n\n---\n\n### **Our Key Differentiators**  \n- **Personalized Approach:** Tailored solutions for individual education needs  \n- **Edutech Focus:** Comprehensive edutech support  \n- **Prevention First:** Early intervention and preventive education  \n- **Tech Integration:** Advanced digital education solutions  \n\n---\n\n### **Industry Trends & Patterns**  \n\n#### **Edutech Industry Trends**  \n- **Online Coaching:** 80% market growth in online coaching solutions  \n- **Digital Education:** 70% users prefer digital education  \n- **Edutech Investment:** 90% increase in edutech investment  \n\n#### **User Behavior Patterns**  \n- **Edutech Content Interest:** ↑ 65% (Year-over-year growth in content engagement)  \n- **Personalization Demand:** ↑ 80% (Users seeking personalized education)  \n- **Digital Tool Adoption:** ↑ 75% (Increase in edutech app usage)  \n\n#### **Environmental Edutech Impact**  \n- **Sustainability Focus:** 70% users prioritize eco-friendly education solutions  \n- **Green Practices:** 85% increase in sustainable edutech products  \n- **Environmental Education:** 90% concerned about environmental education impact  \n\n---\n\n### **Visualized Insights**  \n\n#### **Top Edutech Trends**  \n- Online Coaching: 80%  \n- Digital Education: 75%  \n- Edutech Investment: 70%  \n\n#### **User Engagement Metrics**  \n- **Average Time Spent:** ↑ 40% (10 minutes per session)  \n- **Click-through Rate:** ↑ 30% (4.5% average CTR)  \n- **Content Shares:** ↑ 25% (2.5K monthly average)  \n\n---\n\n### **Global Edutech Market**  \n- **North America:** 35% market share  \n- **Europe:** 28% market share  \n- **Asia Pacific:** 25% market share  \n- **Rest of World:** 12% market share  \n\n---\n\n### **Edutech Analytics Reports**  \n\n#### **Monthly Summary**  \n- **Active Users:** ↑ 10K  \n- **Engagement Rate:** ↑ 60%  \n- **Content Views:** ↑ 40K  \n\n#### **Demographics**  \n- **Age 18-34:** 45%  \n- **Age 35-54:** 35%  \n- **Age 55+:** 20%  \n\n#### **Content Performance**  \n- Edutech Tips: **85% CTR**  \n- Digital Education: **80% CTR**  \n- Online Coaching: **75% CTR**",
+                                    "sender": "Machine",
+                                    "sender_name": "AI",
+                                    "files": [],
+                                    "session_id": "63c9f7ca-90a2-4854-9342-6b826d5ad32d",
+                                    "timestamp": "2025-01-19T03:39:08Z",
+                                    "flow_id": "63c9f7ca-90a2-4854-9342-6b826d5ad32d",
+                                    "error": false,
+                                    "edit": false,
+                                    "properties": {
+                                        "text_color": "",
+                                        "background_color": "",
+                                        "edited": false,
+                                        "source": {
+                                            "id": "GroqModel-1mxi2",
+                                            "display_name": "Groq",
+                                            "source": "llama-3.1-8b-instant"
+                                        },
+                                        "icon": "Groq",
+                                        "allow_markdown": false,
+                                        "state": "complete",
+                                        "targets": []
+                                    },
+                                    "category": "message",
+                                    "content_blocks": []
+                                }
+                            },
+                            "artifacts": {
+                                "message": "### **User Pain Points Analysis**  \n\n#### **Mental Health**  \n\n- **Issues:**  \n\n  - Anxiety  \n\n  - Stress  \n\n  - Obsessive perfectionism  \n\n- **Impact Scale:**  \n\n  - **Mental Health Impact:** 60%  \n\n#### **Work-Life Balance**  \n\n- **Challenges:**  \n\n  - Time management issues  \n\n  - Performance pressure  \n\n  - Career-life conflict  \n\n- **Impact Scale:**  \n\n  - **Work-Life Balance Impact:** 55%  \n\n#### **Health Concerns**  \n\n- **Key Problems:**  \n\n  - Chronic diseases  \n\n  - Lifestyle diseases  \n\n  - Limited self-care time  \n\n- **Impact Scale:**  \n\n  - **Physical Health Impact:** 50%  \n\n#### **Emotional Management**  \n\n- **Challenges:**  \n\n  - Fear of criticism  \n\n  - Burnout symptoms  \n\n  - Emotional overwhelm  \n\n---\n\n### **Sentiment Analysis**  \n\n#### **Overall Sentiment Distribution**  \n\n- **Positive:** 55%  \n\n- **Negative:** 20%  \n\n- **Neutral:** 25%  \n\n#### **Emotional Categories**  \n\n- **Positive Emotions:**  \n\n  - Hope (Intensity: 80%)  \n\n  - Inspiration  \n\n  - Motivation  \n\n- **Negative Emotions:**  \n\n  - Anxiety (Intensity: 60%)  \n\n  - Stress  \n\n  - Frustration  \n\n- **Neutral Emotions:**  \n\n  - Curiosity (Intensity: 70%)  \n\n  - Interest  \n\n  - Skepticism  \n\n---\n\n### **Engagement Analysis**  \n\n#### **Effective Hooks**  \n\n- \"Byju's stands ahead of other Indian edtech firms in all possible ways.\"  \n\n  - **High engagement rate**  \n\n- \"The edutech industry is expected to remain a hot sector of VC investment.\"  \n\n  - **Most shared**  \n\n#### **Call-to-Action Performance**  \n\n- \"Apply for Happiest Minds IPO for listing gains.\"  \n\n  - **70% conversion**  \n\n- \"Invest in edutech industry for good gains.\"  \n\n  - **60% conversion**  \n\n- \"Explore online coaching opportunities for better education.\"  \n\n  - **55% conversion**  \n\n#### **Content Format Performance**  \n\n- **Personal Stories:**  \n\n  - Highest engagement rate among all content formats (80%)  \n\n  - **User retention rate:** 80%  \n\n- **Listicles:**  \n\n  - Most shared content format (70%)  \n\n  - **Share rate:** 70%  \n\n- **Infographics:**  \n\n  - Highest information retention rate (75%)  \n\n  - **Comprehension rate:** 75%  \n\n---\n\n### **Competitor Analysis**  \n\n#### **Market Share Breakdown**  \n\n- **Edutech Companies:**  \n\n  - Market Share: 40%  \n\n  - Growth Rate: 30%  \n\n- **IT Service Providers:**  \n\n  - Market Share: 30%  \n\n  - Growth Rate: 25%  \n\n- **Online Coaching Platforms:**  \n\n  - Market Share: 20%  \n\n  - Growth Rate: 20%  \n\n- **Education Institutions:**  \n\n  - Market Share: 10%  \n\n  - Growth Rate: 15%  \n\n---\n\n### **Our Key Differentiators**  \n\n- **Personalized Approach:** Tailored solutions for individual education needs  \n\n- **Edutech Focus:** Comprehensive edutech support  \n\n- **Prevention First:** Early intervention and preventive education  \n\n- **Tech Integration:** Advanced digital education solutions  \n\n---\n\n### **Industry Trends & Patterns**  \n\n#### **Edutech Industry Trends**  \n\n- **Online Coaching:** 80% market growth in online coaching solutions  \n\n- **Digital Education:** 70% users prefer digital education  \n\n- **Edutech Investment:** 90% increase in edutech investment  \n\n#### **User Behavior Patterns**  \n\n- **Edutech Content Interest:** ↑ 65% (Year-over-year growth in content engagement)  \n\n- **Personalization Demand:** ↑ 80% (Users seeking personalized education)  \n\n- **Digital Tool Adoption:** ↑ 75% (Increase in edutech app usage)  \n\n#### **Environmental Edutech Impact**  \n\n- **Sustainability Focus:** 70% users prioritize eco-friendly education solutions  \n\n- **Green Practices:** 85% increase in sustainable edutech products  \n\n- **Environmental Education:** 90% concerned about environmental education impact  \n\n---\n\n### **Visualized Insights**  \n\n#### **Top Edutech Trends**  \n\n- Online Coaching: 80%  \n\n- Digital Education: 75%  \n\n- Edutech Investment: 70%  \n\n#### **User Engagement Metrics**  \n\n- **Average Time Spent:** ↑ 40% (10 minutes per session)  \n\n- **Click-through Rate:** ↑ 30% (4.5% average CTR)  \n\n- **Content Shares:** ↑ 25% (2.5K monthly average)  \n\n---\n\n### **Global Edutech Market**  \n\n- **North America:** 35% market share  \n\n- **Europe:** 28% market share  \n\n- **Asia Pacific:** 25% market share  \n\n- **Rest of World:** 12% market share  \n\n---\n\n### **Edutech Analytics Reports**  \n\n#### **Monthly Summary**  \n\n- **Active Users:** ↑ 10K  \n\n- **Engagement Rate:** ↑ 60%  \n\n- **Content Views:** ↑ 40K  \n\n#### **Demographics**  \n\n- **Age 18-34:** 45%  \n\n- **Age 35-54:** 35%  \n\n- **Age 55+:** 20%  \n\n#### **Content Performance**  \n\n- Edutech Tips: **85% CTR**  \n\n- Digital Education: **80% CTR**  \n\n- Online Coaching: **75% CTR**",
+                                "sender": "Machine",
+                                "sender_name": "AI",
+                                "files": [],
+                                "type": "object"
+                            },
+                            "outputs": {
+                                "message": {
+                                    "message": {
+                                        "timestamp": "2025-01-19T03:39:08",
+                                        "sender": "Machine",
+                                        "sender_name": "AI",
+                                        "session_id": "63c9f7ca-90a2-4854-9342-6b826d5ad32d",
+                                        "text": "### **User Pain Points Analysis**  \n\n#### **Mental Health**  \n- **Issues:**  \n  - Anxiety  \n  - Stress  \n  - Obsessive perfectionism  \n- **Impact Scale:**  \n  - **Mental Health Impact:** 60%  \n\n#### **Work-Life Balance**  \n- **Challenges:**  \n  - Time management issues  \n  - Performance pressure  \n  - Career-life conflict  \n- **Impact Scale:**  \n  - **Work-Life Balance Impact:** 55%  \n\n#### **Health Concerns**  \n- **Key Problems:**  \n  - Chronic diseases  \n  - Lifestyle diseases  \n  - Limited self-care time  \n- **Impact Scale:**  \n  - **Physical Health Impact:** 50%  \n\n#### **Emotional Management**  \n- **Challenges:**  \n  - Fear of criticism  \n  - Burnout symptoms  \n  - Emotional overwhelm  \n\n---\n\n### **Sentiment Analysis**  \n\n#### **Overall Sentiment Distribution**  \n- **Positive:** 55%  \n- **Negative:** 20%  \n- **Neutral:** 25%  \n\n#### **Emotional Categories**  \n- **Positive Emotions:**  \n  - Hope (Intensity: 80%)  \n  - Inspiration  \n  - Motivation  \n- **Negative Emotions:**  \n  - Anxiety (Intensity: 60%)  \n  - Stress  \n  - Frustration  \n- **Neutral Emotions:**  \n  - Curiosity (Intensity: 70%)  \n  - Interest  \n  - Skepticism  \n\n---\n\n### **Engagement Analysis**  \n\n#### **Effective Hooks**  \n- \"Byju's stands ahead of other Indian edtech firms in all possible ways.\"  \n  - **High engagement rate**  \n- \"The edutech industry is expected to remain a hot sector of VC investment.\"  \n  - **Most shared**  \n\n#### **Call-to-Action Performance**  \n- \"Apply for Happiest Minds IPO for listing gains.\"  \n  - **70% conversion**  \n- \"Invest in edutech industry for good gains.\"  \n  - **60% conversion**  \n- \"Explore online coaching opportunities for better education.\"  \n  - **55% conversion**  \n\n#### **Content Format Performance**  \n- **Personal Stories:**  \n  - Highest engagement rate among all content formats (80%)  \n  - **User retention rate:** 80%  \n- **Listicles:**  \n  - Most shared content format (70%)  \n  - **Share rate:** 70%  \n- **Infographics:**  \n  - Highest information retention rate (75%)  \n  - **Comprehension rate:** 75%  \n\n---\n\n### **Competitor Analysis**  \n\n#### **Market Share Breakdown**  \n- **Edutech Companies:**  \n  - Market Share: 40%  \n  - Growth Rate: 30%  \n- **IT Service Providers:**  \n  - Market Share: 30%  \n  - Growth Rate: 25%  \n- **Online Coaching Platforms:**  \n  - Market Share: 20%  \n  - Growth Rate: 20%  \n- **Education Institutions:**  \n  - Market Share: 10%  \n  - Growth Rate: 15%  \n\n---\n\n### **Our Key Differentiators**  \n- **Personalized Approach:** Tailored solutions for individual education needs  \n- **Edutech Focus:** Comprehensive edutech support  \n- **Prevention First:** Early intervention and preventive education  \n- **Tech Integration:** Advanced digital education solutions  \n\n---\n\n### **Industry Trends & Patterns**  \n\n#### **Edutech Industry Trends**  \n- **Online Coaching:** 80% market growth in online coaching solutions  \n- **Digital Education:** 70% users prefer digital education  \n- **Edutech Investment:** 90% increase in edutech investment  \n\n#### **User Behavior Patterns**  \n- **Edutech Content Interest:** ↑ 65% (Year-over-year growth in content engagement)  \n- **Personalization Demand:** ↑ 80% (Users seeking personalized education)  \n- **Digital Tool Adoption:** ↑ 75% (Increase in edutech app usage)  \n\n#### **Environmental Edutech Impact**  \n- **Sustainability Focus:** 70% users prioritize eco-friendly education solutions  \n- **Green Practices:** 85% increase in sustainable edutech products  \n- **Environmental Education:** 90% concerned about environmental education impact  \n\n---\n\n### **Visualized Insights**  \n\n#### **Top Edutech Trends**  \n- Online Coaching: 80%  \n- Digital Education: 75%  \n- Edutech Investment: 70%  \n\n#### **User Engagement Metrics**  \n- **Average Time Spent:** ↑ 40% (10 minutes per session)  \n- **Click-through Rate:** ↑ 30% (4.5% average CTR)  \n- **Content Shares:** ↑ 25% (2.5K monthly average)  \n\n---\n\n### **Global Edutech Market**  \n- **North America:** 35% market share  \n- **Europe:** 28% market share  \n- **Asia Pacific:** 25% market share  \n- **Rest of World:** 12% market share  \n\n---\n\n### **Edutech Analytics Reports**  \n\n#### **Monthly Summary**  \n- **Active Users:** ↑ 10K  \n- **Engagement Rate:** ↑ 60%  \n- **Content Views:** ↑ 40K  \n\n#### **Demographics**  \n- **Age 18-34:** 45%  \n- **Age 35-54:** 35%  \n- **Age 55+:** 20%  \n\n#### **Content Performance**  \n- Edutech Tips: **85% CTR**  \n- Digital Education: **80% CTR**  \n- Online Coaching: **75% CTR**",
+                                        "files": [],
+                                        "error": false,
+                                        "edit": false,
+                                        "properties": {
+                                            "text_color": "",
+                                            "background_color": "",
+                                            "edited": false,
+                                            "source": {
+                                                "id": "GroqModel-1mxi2",
+                                                "display_name": "Groq",
+                                                "source": "llama-3.1-8b-instant"
+                                            },
+                                            "icon": "Groq",
+                                            "allow_markdown": false,
+                                            "state": "complete",
+                                            "targets": []
+                                        },
+                                        "category": "message",
+                                        "content_blocks": [],
+                                        "id": "4d4b358a-4185-4b50-be90-489be091056e",
+                                        "flow_id": "63c9f7ca-90a2-4854-9342-6b826d5ad32d"
+                                    },
+                                    "type": "object"
+                                }
+                            },
+                            "logs": {
+                                "message": []
+                            },
+                            "messages": [
+                                {
+                                    "message": "### **User Pain Points Analysis**  \n\n#### **Mental Health**  \n\n- **Issues:**  \n\n  - Anxiety  \n\n  - Stress  \n\n  - Obsessive perfectionism  \n\n- **Impact Scale:**  \n\n  - **Mental Health Impact:** 60%  \n\n#### **Work-Life Balance**  \n\n- **Challenges:**  \n\n  - Time management issues  \n\n  - Performance pressure  \n\n  - Career-life conflict  \n\n- **Impact Scale:**  \n\n  - **Work-Life Balance Impact:** 55%  \n\n#### **Health Concerns**  \n\n- **Key Problems:**  \n\n  - Chronic diseases  \n\n  - Lifestyle diseases  \n\n  - Limited self-care time  \n\n- **Impact Scale:**  \n\n  - **Physical Health Impact:** 50%  \n\n#### **Emotional Management**  \n\n- **Challenges:**  \n\n  - Fear of criticism  \n\n  - Burnout symptoms  \n\n  - Emotional overwhelm  \n\n---\n\n### **Sentiment Analysis**  \n\n#### **Overall Sentiment Distribution**  \n\n- **Positive:** 55%  \n\n- **Negative:** 20%  \n\n- **Neutral:** 25%  \n\n#### **Emotional Categories**  \n\n- **Positive Emotions:**  \n\n  - Hope (Intensity: 80%)  \n\n  - Inspiration  \n\n  - Motivation  \n\n- **Negative Emotions:**  \n\n  - Anxiety (Intensity: 60%)  \n\n  - Stress  \n\n  - Frustration  \n\n- **Neutral Emotions:**  \n\n  - Curiosity (Intensity: 70%)  \n\n  - Interest  \n\n  - Skepticism  \n\n---\n\n### **Engagement Analysis**  \n\n#### **Effective Hooks**  \n\n- \"Byju's stands ahead of other Indian edtech firms in all possible ways.\"  \n\n  - **High engagement rate**  \n\n- \"The edutech industry is expected to remain a hot sector of VC investment.\"  \n\n  - **Most shared**  \n\n#### **Call-to-Action Performance**  \n\n- \"Apply for Happiest Minds IPO for listing gains.\"  \n\n  - **70% conversion**  \n\n- \"Invest in edutech industry for good gains.\"  \n\n  - **60% conversion**  \n\n- \"Explore online coaching opportunities for better education.\"  \n\n  - **55% conversion**  \n\n#### **Content Format Performance**  \n\n- **Personal Stories:**  \n\n  - Highest engagement rate among all content formats (80%)  \n\n  - **User retention rate:** 80%  \n\n- **Listicles:**  \n\n  - Most shared content format (70%)  \n\n  - **Share rate:** 70%  \n\n- **Infographics:**  \n\n  - Highest information retention rate (75%)  \n\n  - **Comprehension rate:** 75%  \n\n---\n\n### **Competitor Analysis**  \n\n#### **Market Share Breakdown**  \n\n- **Edutech Companies:**  \n\n  - Market Share: 40%  \n\n  - Growth Rate: 30%  \n\n- **IT Service Providers:**  \n\n  - Market Share: 30%  \n\n  - Growth Rate: 25%  \n\n- **Online Coaching Platforms:**  \n\n  - Market Share: 20%  \n\n  - Growth Rate: 20%  \n\n- **Education Institutions:**  \n\n  - Market Share: 10%  \n\n  - Growth Rate: 15%  \n\n---\n\n### **Our Key Differentiators**  \n\n- **Personalized Approach:** Tailored solutions for individual education needs  \n\n- **Edutech Focus:** Comprehensive edutech support  \n\n- **Prevention First:** Early intervention and preventive education  \n\n- **Tech Integration:** Advanced digital education solutions  \n\n---\n\n### **Industry Trends & Patterns**  \n\n#### **Edutech Industry Trends**  \n\n- **Online Coaching:** 80% market growth in online coaching solutions  \n\n- **Digital Education:** 70% users prefer digital education  \n\n- **Edutech Investment:** 90% increase in edutech investment  \n\n#### **User Behavior Patterns**  \n\n- **Edutech Content Interest:** ↑ 65% (Year-over-year growth in content engagement)  \n\n- **Personalization Demand:** ↑ 80% (Users seeking personalized education)  \n\n- **Digital Tool Adoption:** ↑ 75% (Increase in edutech app usage)  \n\n#### **Environmental Edutech Impact**  \n\n- **Sustainability Focus:** 70% users prioritize eco-friendly education solutions  \n\n- **Green Practices:** 85% increase in sustainable edutech products  \n\n- **Environmental Education:** 90% concerned about environmental education impact  \n\n---\n\n### **Visualized Insights**  \n\n#### **Top Edutech Trends**  \n\n- Online Coaching: 80%  \n\n- Digital Education: 75%  \n\n- Edutech Investment: 70%  \n\n#### **User Engagement Metrics**  \n\n- **Average Time Spent:** ↑ 40% (10 minutes per session)  \n\n- **Click-through Rate:** ↑ 30% (4.5% average CTR)  \n\n- **Content Shares:** ↑ 25% (2.5K monthly average)  \n\n---\n\n### **Global Edutech Market**  \n\n- **North America:** 35% market share  \n\n- **Europe:** 28% market share  \n\n- **Asia Pacific:** 25% market share  \n\n- **Rest of World:** 12% market share  \n\n---\n\n### **Edutech Analytics Reports**  \n\n#### **Monthly Summary**  \n\n- **Active Users:** ↑ 10K  \n\n- **Engagement Rate:** ↑ 60%  \n\n- **Content Views:** ↑ 40K  \n\n#### **Demographics**  \n\n- **Age 18-34:** 45%  \n\n- **Age 35-54:** 35%  \n\n- **Age 55+:** 20%  \n\n#### **Content Performance**  \n\n- Edutech Tips: **85% CTR**  \n\n- Digital Education: **80% CTR**  \n\n- Online Coaching: **75% CTR**",
+                                    "sender": "Machine",
+                                    "sender_name": "AI",
+                                    "session_id": "63c9f7ca-90a2-4854-9342-6b826d5ad32d",
+                                    "component_id": "ChatOutput-Iakbm",
+                                    "files": [],
+                                    "type": "message"
+                                }
+                            ],
+                            "component_display_name": "Chat Output",
+                            "component_id": "ChatOutput-Iakbm",
+                            "used_frozen_result": false
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
 
-#### **Career Development**  
-- **Challenges:**  
-  - Limited job opportunities  
-  - Career growth stagnation  
-  - Skill mismatch  
-- **Impact Scale:**  
-  - **Career Development Impact:** 80%  
-
-#### **Education**  
-- **Key Problems:**  
-  - Limited access to quality education  
-  - Inefficient learning methods  
-  - Lack of personalized learning  
-- **Impact Scale:**  
-  - **Education Impact:** 75%  
-
-#### **Financial Stability**  
-- **Challenges:**  
-  - Limited financial resources  
-  - Unstable income  
-  - High debt burden  
-- **Impact Scale:**  
-  - **Financial Stability Impact:** 70%  
-
----
-
-### **Sentiment Analysis**  
-
-#### **Overall Sentiment Distribution**  
-- **Positive:** 55%  
-- **Negative:** 20%  
-- **Neutral:** 25%  
-
-#### **Emotional Categories**  
-- **Positive Emotions:**  
-  - Hope (Intensity: 80%)  
-  - Inspiration  
-  - Motivation  
-- **Negative Emotions:**  
-  - Frustration (Intensity: 60%)  
-  - Anxiety  
-  - Disappointment  
-- **Neutral Emotions:**  
-  - Curiosity (Intensity: 70%)  
-  - Interest  
-  - Skepticism  
-
----
-
-### **Engagement Analysis**  
-
-#### **Effective Hooks**  
-- "Byju's stands ahead of other Indian edtech firms in all possible ways."  
-  - **High engagement rate**  
-- "Edutech is an industry that will never have recession."  
-  - **Most shared**  
-
-#### **Call-to-Action Performance**  
-- "Invest in Happiest Minds for listing gains."  
-  - **65% conversion**  
-- "Follow HR-Menting for career growth advice."  
-  - **55% conversion**  
-- "Learn more about Happiest Minds' offerings."  
-  - **50% conversion**  
-
-#### **Content Format Performance**  
-- **Personal Stories:**  
-  - Highest engagement rate among all content formats (85%)  
-  - **User retention rate:** 85%  
-- **Listicles:**  
-  - Most shared content format (75%)  
-  - **Share rate:** 75%  
-- **Infographics:**  
-  - Highest information retention rate (80%)  
-  - **Comprehension rate:** 80%  
-
----
-
-### **Competitor Analysis**  
-
-#### **Market Share Breakdown**  
-- **Edtech Firms:**  
-  - Market Share: 40%  
-  - Growth Rate: 25%  
-- **IT Companies:**  
-  - Market Share: 30%  
-  - Growth Rate: 20%  
-- **Financial Institutions:**  
-  - Market Share: 20%  
-  - Growth Rate: 15%  
-- **Other Industries:**  
-  - Market Share: 10%  
-  - Growth Rate: 10%  
-
----
-
-### **Our Key Differentiators**  
-- **Personalized Learning:** Tailored education solutions for individual needs  
-- **Career Growth Support:** Comprehensive career development resources  
-- **Financial Stability:** Access to financial resources and planning tools  
-
----
-
-### **Industry Trends & Patterns**  
-
-#### **Edtech Industry Trends**  
-- **Personalized Learning:** 80% market growth in personalized education solutions  
-- **Career Development:** 75% users prioritize career growth and development  
-- **Financial Stability:** 90% concerned about financial stability and security  
-
-#### **User Behavior Patterns**  
-- **Edtech Content Interest:** ↑ 60% (Year-over-year growth in content engagement)  
-- **Career Development Demand:** ↑ 80% (Users seeking career growth advice)  
-- **Financial Planning Adoption:** ↑ 70% (Increase in financial planning tool usage)  
-
-#### **Environmental Impact**  
-- **Sustainability Focus:** 70% users prioritize eco-friendly education solutions  
-- **Green Practices:** 85% increase in sustainable education products  
-- **Environmental Impact:** 90% concerned about environmental impact of education  
-
----
-
-### **Visualized Insights**  
-
-#### **Top Edtech Trends**  
-- Personalized Learning: 85%  
-- Career Development: 80%  
-- Financial Stability: 75%  
-
-#### **User Engagement Metrics**  
-- **Average Time Spent:** ↑ 40% (10 minutes per session)  
-- **Click-through Rate:** ↑ 30% (4.5% average CTR)  
-- **Content Shares:** ↑ 25% (1.8K monthly average)  
-
----
-
-### **Global Edtech Market**  
-- **North America:** 35% market share  
-- **Europe:** 28% market share  
-- **Asia Pacific:** 25% market share  
-- **Rest of World:** 12% market share  
-
----
-
-### **Edtech Analytics Reports**  
-
-#### **Monthly Summary**  
-- **Active Users:** ↑ 10K  
-- **Engagement Rate:** ↑ 60%  
-- **Content Views:** ↑ 30K  
-
-#### **Demographics**  
-- **Age 18-34:** 45%  
-- **Age 35-54:** 35%  
-- **Age 55+:** 20%  
-
-#### **Content Performance**  
-- Edtech Tips: **85% CTR**  
-- Career Development Guides: **80% CTR**  
-- Financial Planning: **75% CTR**
-`;

@@ -4,6 +4,7 @@ const cors = require('cors');
 const { getFitnessVideosSortedByViews } = require('./ytapi');
 const analyzeReddit = require('./hungface');
 const { scrapeQuora } = require('./qoura');
+// const fetch = require('node-fetch');
 
 const app = express();
 const PORT = 5000;
@@ -16,15 +17,17 @@ app.get('/', (req, res) => {
     res.send('Welcome to the Ad Analysis API!');
 });
 
+
 app.post('/proxy', async (req, res) => {
     const authHeader = req.headers.authorization;
+    console.log(req.body);
     
-    if (!authHeader || !authHeader.startsWith('Bearer ')) {
+    if (!authHeader || !authHeader.startsWith('Bearer AstraCS:TLeeeWtlvDNqHbIUZesyvySZ:8c5a931d6d4edf38963cb71eccbe72dffe4d49a0d43754a364dffbd99c070396')) {
         return res.status(401).json({ error: 'Invalid authorization header' });
     }
 
     try {
-        const response = await fetch('https://api.langflow.astra.datastax.com/lf/154dca2e-d514-4a19-91fc-f4d198ebd1d9/api/v1/run/cbafec6b-51a8-414e-9adf-5b01f6442ce4?stream=false', {
+        const response = await fetch('https://api.langflow.astra.datastax.com/lf/154dca2e-d514-4a19-91fc-f4d198ebd1d9/api/v1/run/63c9f7ca-90a2-4854-9342-6b826d5ad32d?stream=false', {
             method: 'POST',
             headers: {
                 'Authorization': authHeader || "Bearer AstraCS:PTHYKJbrTJHxWPoISNNOrzoR:c2331dc003818b31bc690eaf74641b0e1c43b5c201a1b4a36d066c239d48975f",
@@ -48,14 +51,15 @@ app.post('/fitness-videos', async (req, res) => {
 });
 
 app.post('/reddit-analysis', async (req, res) => {
-    const { niche, competitor } = req.body;
-    const results = await analyzeReddit(niche, competitor);
+    const { niche } = req.body;
+    const results = await analyzeReddit(niche);
     console.log(results);
     res.json(results);
 });
 
 app.post('/quora-scrape', async (req, res) => {
     const { data } = req.body;
+    console.log("getting the data ", data);
     const results = await scrapeQuora(data);
     res.json(results);
 });

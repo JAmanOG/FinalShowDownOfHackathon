@@ -9,6 +9,7 @@ import  DashBoard from './pages/DashBoard.jsx'
 import  PdfDownloder  from './pages/PdfDownloder.jsx'
 import AboutPage from './pages/About.jsx'
 import InputPage from './pages/InputPage.jsx'
+import LoadingSpinner from './components/Loading.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -18,6 +19,7 @@ const router = createBrowserRouter(
       <Route path='/input' element={<InputPage/>} />
       <Route path='/pdf' element={<PdfDownloder/>} />
       <Route path='/about' element={<AboutPage/>} />
+      <Route path='/loading' element={<LoadingSpinner/>} />
     </Route>
   )
 )
