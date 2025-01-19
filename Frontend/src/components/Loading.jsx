@@ -130,9 +130,11 @@ const LoadingSpinner = ({ size = 'w-10 h-10', color = 'text-blue-500', message =
           <div
             className={`animate-spin rounded-full border-t-4 border-l-4 border-gray-200 ${color} ${size}`}
           ></div>
-          <p>{message}</p>
+          <p>loading{message}</p>
         </>
       )}
+
+      Loading
       {errorFirstFetch && <p className="text-red-500">Error: {errorFirstFetch}</p>}
       {errorSecondFetch && <p className="text-red-500">Error: {errorSecondFetch}</p>}
       {!isFirstFetchLoading && !isSecondFetchLoading && outputState && (
