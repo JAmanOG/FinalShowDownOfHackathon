@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Loader2, Search, ArrowRight, Globe, Sparkles } from "lucide-react";
+import { useNavigate } from 'react-router-dom';
 
 const SearchForm = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +11,9 @@ const SearchForm = () => {
   const [error, setError] = useState('');
   const [showSuccess, setShowSuccess] = useState(false);
   const [isSelectOpen, setIsSelectOpen] = useState(false);
+  const navigate = useNavigate();
+
+  
 
   const platforms = [
     { value: 'reddit', label: 'Reddit', icon: '🔴', color: 'bg-gradient-to-r from-orange-500 to-red-500' },
@@ -39,10 +43,10 @@ const SearchForm = () => {
     try {
       setIsLoading(true);
       setError('');
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      setShowSuccess(true);
-      await new Promise(resolve => setTimeout(resolve, 500));
-      console.log('Navigating to dashboard with data:', formData);
+      setShowSuccess(false);
+
+      // Simulate API call
+      navigate('/loading', { state: { searchQuery: formData.searchQuery, platform: formData.platform } });
     } catch (err) {
       setError('An error occurred. Please try again.');
     } finally {

@@ -23,6 +23,7 @@
     "jsdom": "^26.0.0",
     "lucide-react": "^0.473.0",
     "natural": "^8.0.1",
+    "node-fetch": "^3.3.2",
     "puppeteer": "^24.1.0",
     "puppeteer-extra": "^3.3.6",
     "puppeteer-extra-plugin-stealth": "^2.11.2",

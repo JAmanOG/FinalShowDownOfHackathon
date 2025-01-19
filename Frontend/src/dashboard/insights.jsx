@@ -1,7 +1,8 @@
 import React from 'react'
 
-const insights = (insights) => {
-console.log(insights)
+const insights = (messageText) => {
+console.log(messageText)
+
   return (
 <div id="insights" className="py-10 px-6 bg-white">
     <div className="max-w-7xl mx-auto">
