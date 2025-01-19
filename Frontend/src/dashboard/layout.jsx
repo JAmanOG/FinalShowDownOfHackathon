@@ -7,9 +7,7 @@ import Engagement from "./engagement";
 import Reports from "./reports";
 import { data } from "../../constant";
 import { useNavigate } from "react-router-dom";
-
-const Loading = () => {
-};
+import  Loading  from '../components/Loading'
 
 
 const Layout = () => {
