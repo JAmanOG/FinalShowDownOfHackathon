@@ -56,23 +56,23 @@ const DashBoard = ({ outputState }) => {
               className="mb-12 p-6 bg-white border border-gray-200 shadow-sm rounded-lg"
             >
               <h2 className="text-2xl font-bold text-indigo-700 mb-4">
-                {section.title || `Section ${index + 1}`}
+                {section.title.replace(/\*\*/g, '') || `Section ${index + 1}`}
               </h2>
               <ul className="list-disc list-inside text-gray-700 space-y-2">
                 {section.points.map((point, idx) => {
                   if (point.type === "subsection") {
                     return (
                       <li key={idx}>
-                        <span className="font-medium">{point.content}</span>
+                        <span className="font-medium">{point.content.replace(/\*\*/g, '')}</span>
                         <ul className="list-circle list-inside ml-4 text-gray-600">
                           {point.subPoints.map((subPoint, subIdx) => (
-                            <li key={subIdx}>{subPoint}</li>
+                            <li key={subIdx}>{subPoint.replace(/\*\*/g, '')}</li>
                           ))}
                         </ul>
                       </li>
                     );
                   }
-                  return <li key={idx}>{point.content}</li>;
+                  return <li key={idx}>{point.content.replace(/\*\*/g, '')}</li>;
                 })}
               </ul>
             </div>
