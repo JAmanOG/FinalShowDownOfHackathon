@@ -2,6 +2,15 @@ import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import DashBoard from '../pages/DashBoard';
 
+// Utility function to clean text safely
+const cleanText = (text) => {
+  if (typeof text !== 'string') return ''; // Ensure text is a string
+  return text
+    .replace(/[#*]/g, '') // Remove # and *
+    .replace(/\s{2,}/g, ' ') // Replace multiple spaces with a single space
+    .trim(); // Remove leading/trailing whitespace
+};
+
 const LoadingSpinner = ({ size = 'w-10 h-10', color = 'text-blue-500', message = 'Loading...' }) => {
   const location = useLocation();
   const { searchQuery, platform } = location.state || {}; // Safely access state
@@ -47,8 +56,14 @@ const LoadingSpinner = ({ size = 'w-10 h-10', color = 'text-blue-500', message =
 
         if (res.ok) {
           const data = await res.json();
-          
-          setDataState(data);
+
+          // Clean the fetched data if it is valid
+          const cleanedData = {
+            ...data,
+            data: cleanText(data?.data), // Ensure data.data exists before cleaning
+          };
+
+          setDataState(cleanedData);
         } else {
           throw new Error('Failed to fetch platform data');
         }
@@ -104,7 +119,14 @@ const LoadingSpinner = ({ size = 'w-10 h-10', color = 'text-blue-500', message =
 
         if (response.ok) {
           const result = await response.json();
-          setOutputState(result);
+
+          // Clean the fetched data if it is valid
+          const cleanedResult = {
+            ...result,
+            data: cleanText(result?.data), // Ensure result.data exists before cleaning
+          };
+
+          setOutputState(cleanedResult);
         } else {
           throw new Error(`Request failed: ${response.status}`);
         }
@@ -134,7 +156,7 @@ const LoadingSpinner = ({ size = 'w-10 h-10', color = 'text-blue-500', message =
           <p>Loading...{message}</p>
         </>
       )}
-      
+
       {errorFirstFetch && <p className="text-red-500">Error: {errorFirstFetch}</p>}
       {errorSecondFetch && <p className="text-red-500">Error: {errorSecondFetch}</p>}
       {!isFirstFetchLoading && !isSecondFetchLoading && outputState && (
