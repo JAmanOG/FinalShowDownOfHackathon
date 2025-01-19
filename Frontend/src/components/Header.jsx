@@ -10,7 +10,7 @@ function Header() {
   const navItems = [
     { name: "Home", icon: <Home />, nav: "/" },
     { name: "Input", icon: <InfoIcon />, nav: "/input" },
-    { name: "Dashboard", icon: <LayoutDashboard />, nav: "/dashboard" },
+    // { name: "Dashboard", icon: <LayoutDashboard />, nav: "/dashboard" },
     // { name: "Pdf", icon: <FileText />, nav: "/pdf" },
     { name: "About", icon: <InfoIcon />, nav: "/about" },
   ];
