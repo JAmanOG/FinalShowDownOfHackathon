@@ -74,7 +74,7 @@ const Home = () => {
           </p>
           <div className="mt-8">
             <Link
-              to="/contact"
+              to="/about"
               className="inline-flex items-center px-8 py-4 bg-indigo-600 text-white font-semibold text-lg rounded-lg shadow-lg hover:bg-indigo-700 transition-transform transform hover:scale-105"
             >
               Contact Us

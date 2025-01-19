@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AboutPage = () => {
   const teamMembers = [
@@ -6,21 +7,28 @@ const AboutPage = () => {
       name: "Bhavik Prajapati",
       role: "Frontend Developer",
       image: "src/assets/hds.png",
+      linked : "https://www.linkedin.com/in/bhavik-prajapati-001li",
     },
     {
       name: "Aman Jaiswal",
       role: "Full Stack Developer",
       image: "/src/assets/aman.jpg",
+      linked : "https://www.linkedin.com/in/aman-jaiswalg",
+
     },
     {
       name: "Rohit Rathod",
       role: "UI/UX Designer",
       image: "src/assets/rohit.jpg",
+      linked : "https://www.linkedin.com/in/rohit-rathod-086527252",
+
     },
     {
       name: "Sreedev Nair",
       role: "Python/Data Science Developer",
       image: "src/assets/sreedev.jpg",
+      linked : "https://www.linkedin.com/in/sreedevnair02",
+
     },
   ];
 
@@ -58,9 +66,11 @@ const AboutPage = () => {
                 {member.name}
               </h3>
               <p className="mt-2 text-gray-500">{member.role}</p>
+              <a href={member.linked} target="_blank" rel="noopener noreferrer">
               <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-colors duration-300">
                 Connect
               </button>
+              </a>
             </div>
           ))}
         </div>
