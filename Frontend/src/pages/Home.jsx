@@ -4,35 +4,33 @@ import { ArrowRight, CheckCircle } from "lucide-react";
 
 const Home = () => {
   return (
-    <main className="bg-gray-50 min-h-screen">
+    <main className="bg-gray-900 text-gray-300 min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-600 to-blue-800 text-white py-16">
+      <section className="relative bg-gradient-to-br from-purple-900 via-indigo-900 to-gray-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-            Automate Ad Creation with ART Finder
+          <h1 className="text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg">
+            Automate Ad Creation with <span className="text-yellow-400">ART Finder</span>
           </h1>
-          <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto">
-            Discover user pain points, analyze competitor strategies, and
-            generate actionable insights to create the most engaging ads
-            effortlessly.
+          <p className="mt-6 text-lg md:text-xl max-w-3xl mx-auto text-gray-300">
+            Uncover user pain points, analyze competitors, and generate insights to craft impactful ads with ease.
           </p>
-          <div className="mt-8">
+          <div className="mt-10">
             <Link
               to="/input"
-              className="inline-flex items-center px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow hover:bg-gray-100 transition"
+              className="inline-flex items-center px-8 py-4 bg-yellow-400 text-gray-900 font-semibold text-lg rounded-lg shadow-lg hover:bg-yellow-500 transition-transform transform hover:scale-105"
             >
               Get Started
-              <ArrowRight className="ml-2 w-5 h-5" />
+              <ArrowRight className="ml-3 w-6 h-6" />
             </Link>
           </div>
         </div>
       </section>
 
       {/* Features Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gray-800">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
-            Why Choose ART Finder?
+          <h2 className="text-4xl font-extrabold text-center mb-12 text-gray-100">
+            Why Choose <span className="text-indigo-400">ART Finder</span>?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
@@ -54,11 +52,11 @@ const Home = () => {
             ].map((feature, index) => (
               <div
                 key={index}
-                className="p-6 border border-gray-200 rounded-lg shadow hover:shadow-lg transition"
+                className="p-6 border border-gray-700 rounded-lg shadow-lg bg-gray-900 hover:bg-gray-800 transition-transform transform hover:scale-105"
               >
-                <CheckCircle className="w-10 h-10 text-blue-600 mb-4" />
-                <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
+                <CheckCircle className="w-12 h-12 text-indigo-400 mb-4" />
+                <h3 className="text-2xl font-semibold mb-3 text-gray-100">{feature.title}</h3>
+                <p className="text-gray-400">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -66,31 +64,30 @@ const Home = () => {
       </section>
 
       {/* Call-to-Action Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold leading-tight">
-            Let’s Collaborate and Build Together!
+          <h2 className="text-4xl font-extrabold text-gray-100 leading-tight">
+            Let’s Build Something Amazing Together!
           </h2>
-          <p className="mt-4 text-lg text-gray-600">
-            Have questions or want to contribute? Reach out to our team and
-            explore the possibilities of ART Finder.
+          <p className="mt-4 text-lg text-gray-400">
+            Have questions or want to contribute? Connect with our team and explore endless possibilities.
           </p>
           <div className="mt-8">
             <Link
-              to="/contact"
-              className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition"
+              to="/about"
+              className="inline-flex items-center px-8 py-4 bg-indigo-600 text-white font-semibold text-lg rounded-lg shadow-lg hover:bg-indigo-700 transition-transform transform hover:scale-105"
             >
               Contact Us
-              <ArrowRight className="ml-2 w-5 h-5" />
+              <ArrowRight className="ml-3 w-6 h-6" />
             </Link>
           </div>
         </div>
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gray-800">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
+          <h2 className="text-4xl font-extrabold text-center mb-12 text-gray-100">
             What Our Users Say
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -113,12 +110,10 @@ const Home = () => {
             ].map((testimonial, index) => (
               <div
                 key={index}
-                className="p-6 bg-gray-100 rounded-lg shadow hover:shadow-lg transition"
+                className="p-6 bg-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105"
               >
-                <p className="italic text-gray-700">"{testimonial.feedback}"</p>
-                <h4 className="mt-4 font-bold text-gray-800">
-                  - {testimonial.name}
-                </h4>
+                <p className="italic text-gray-300">"{testimonial.feedback}"</p>
+                <h4 className="mt-4 font-bold text-indigo-400">- {testimonial.name}</h4>
               </div>
             ))}
           </div>
