@@ -81,7 +81,7 @@ const Reports = ({ data }) => {
               </div>
             </div>
             <div className="space-y-4">
-              {healthAnalytics[Object.keys(healthAnalytics)[1]].map(
+              {healthAnalytics[Object.keys(healthAnalytics)[1]]?.map(
                 (group, index) => (
                   <div key={index} className="relative pt-1">
                     <div className="flex justify-between mb-2">
