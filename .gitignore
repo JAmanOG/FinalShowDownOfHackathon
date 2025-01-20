@@ -4,3 +4,5 @@ env
 user_data
 cookies
 Backend/app/cookies.json
+.env
+.gitgnore
