@@ -1,237 +1,251 @@
 import React from "react";
 const data = {
-  userPainPointsAnalysis: {
-    productQualityIssues: {
+  userPainPointsAnalysis: [
+    {
+      title: "Education and Career",
       issues: [
-        "Wrong product received",
-        "Product without price tag",
-        "Quality difference between website and actual product",
+        "Difficulty in finding a suitable education platform",
+        "Ineffective job placement services",
+        "Lack of recognition of specific opportunities",
       ],
-      impactScale: {
-        productQualityImpact: 90,
-      },
     },
-    customerServiceIssues: {
-      challenges: [
-        "No option to call customer care",
-        "Chat option not effective",
-        "No proper solution provided",
+    {
+      title: "Trust and Credibility",
+      issues: [
+        "Difficulty in building trust with employers",
+        "Limited credibility in the higher education market",
+        "Lack of recognition of past experience",
       ],
-      impactScale: {
-        customerServiceImpact: 85,
-      },
     },
-    orderFulfillmentIssues: {
-      keyProblems: [
-        "Delayed delivery",
-        "Product lost during shipping",
-        "No consideration for customer's request",
+    {
+      title: "Investment and Funding",
+      issues: [
+        "Lack of previous investment by the investor",
+        "Difficulty in finding suitable investors",
+        "Limited access to funding opportunities",
       ],
-      impactScale: {
-        orderFulfillmentImpact: 80,
-      },
     },
-  },
+  ],
+  impactScale: [
+    {
+      title: "Education and Career Impact",
+      percentage: 80,
+    },
+    {
+      title: "Trust and Credibility Impact",
+      percentage: 75,
+    },
+    {
+      title: "Investment and Funding Impact",
+      percentage: 70,
+    },
+  ],
   sentimentAnalysis: {
-    overallSentimentDistribution: {
-      positive: 10,
-      negative: 80,
-      neutral: 10,
+    overallSentiment: {
+      positive: 40,
+      negative: 30,
+      neutral: 30,
     },
     emotionalCategories: {
-      negativeEmotions: [
-        {
-          emotion: "Frustration",
-          intensity: 90,
-        },
-        "Anger",
-        "Disappointment",
-      ],
-      neutralEmotions: [
-        {
-          emotion: "Curiosity",
-          intensity: 75,
-        },
-        "Skepticism",
-        "Indifference",
-      ],
+      positive: ["Hope", "Inspiration", "Motivation"],
+      negative: ["Frustration", "Disappointment", "Anger"],
+      neutral: ["Curiosity", "Interest", "Skepticism"],
     },
+    sentimentIntensity: [
+      {
+        emotion: "Hope",
+        percentage: 60,
+      },
+      {
+        emotion: "Frustration",
+        percentage: 50,
+      },
+      {
+        emotion: "Curiosity",
+        percentage: 60,
+      },
+    ],
   },
   engagementAnalysis: {
     effectiveHooks: [
       {
-        quote: "Myntra is the most bogus e-commerce website that there is.",
+        quote: "One and only best stop for CANADA Process",
         engagement: "High engagement rate",
       },
       {
-        quote: "I lost 1000 bucks in the process.",
+        quote: "I am a student of Profound Institute",
         engagement: "Most shared",
       },
     ],
-    callToActionPerformance: [
+    ctaPerformance: [
       {
-        cta: "Never going to buy anything there and I won’t even recommend anyone to buy from there.",
-        conversion: 90,
-      },
-      {
-        cta: "This is a clear fraud.",
-        conversion: 85,
-      },
-      {
-        cta: "Its the worst experience!!",
+        cta: "DO CONTACT AND REACH AT YOUR DREAM PLACE",
         conversion: 80,
+      },
+      {
+        cta: "Check out www.iversity.org",
+        conversion: 60,
+      },
+      {
+        cta: "I would suggest the following five reasons",
+        conversion: 50,
       },
     ],
     contentFormatPerformance: [
       {
         format: "Personal Stories",
-        engagement: 92,
+        engagement: 70,
         description: "Highest engagement rate among all content formats",
       },
       {
         format: "Listicles",
-        engagement: 80,
+        engagement: 60,
         description: "Most shared content format",
       },
       {
         format: "Infographics",
-        engagement: 85,
+        engagement: 65,
         description: "Highest information retention rate",
       },
     ],
   },
   competitorInsights: {
-    marketShareBreakdown: [
+    competitors: [
       {
-        company: "Amazon",
-        marketShare: 30,
+        title: "Education Platforms",
+        marketShare: 40,
         growthRate: 25,
       },
       {
-        company: "Flipkart",
-        marketShare: 25,
+        title: "Job Placement Services",
+        marketShare: 30,
         growthRate: 20,
       },
       {
-        company: "Myntra",
+        title: "Investment and Funding",
         marketShare: 20,
         growthRate: 15,
       },
       {
-        company: "Other E-commerce Websites",
-        marketShare: 25,
+        title: "Higher Education Institutions",
+        marketShare: 10,
         growthRate: 10,
       },
     ],
+    keyDifferentiators: [],
   },
   trendsAndPatterns: {
-    eCommerceTrends: [
+    educationAndCareerTrends: [
       {
-        trend: "Mobile Commerce",
-        percentage: 90,
-      },
-      {
-        trend: "App-based Shopping",
+        trend: "Online Education",
         percentage: 80,
       },
       {
-        trend: "Personalization",
-        percentage: 75,
+        trend: "Personalized Learning",
+        percentage: 70,
+      },
+      {
+        trend: "Career Development",
+        percentage: 60,
       },
     ],
-    userBehaviorPatterns: [
+    investmentAndFundingTrends: [
       {
-        pattern: "Shopping Habits",
+        trend: "EdTech Investment",
         percentage: 80,
       },
       {
-        pattern: "Product Research",
-        percentage: 75,
+        trend: "Funding Opportunities",
+        percentage: 70,
       },
       {
-        pattern: "Social Media Influence",
+        trend: "Investor Interest",
         percentage: 60,
       },
     ],
   },
   visualizedInsights: {
-    topEcommerceTrends: [
+    topEducationAndCareerTrends: [
       {
-        trend: "Mobile Commerce",
-        percentage: 90,
-      },
-      {
-        trend: "App-based Shopping",
+        trend: "Online Education",
         percentage: 80,
       },
       {
-        trend: "Personalization",
-        percentage: 75,
+        trend: "Personalized Learning",
+        percentage: 70,
+      },
+      {
+        trend: "Career Development",
+        percentage: 60,
       },
     ],
     userEngagementMetrics: [
       {
         metric: "Average Time Spent",
         value: "10 minutes",
-        percentageChange: 40,
+        percentageChange: 30,
+        description: "per session",
       },
       {
         metric: "Click-through Rate",
-        value: "4.5%",
-        percentageChange: 30,
+        value: "4%",
+        percentageChange: 25,
+        description: "average CTR",
       },
       {
         metric: "Content Shares",
-        value: "2.5K",
-        percentageChange: 25,
+        value: "1.5K",
+        percentageChange: 20,
+        description: "monthly average",
       },
     ],
   },
-  globalEcommerceMarket: {
+  globalMarket: {
     regions: [
       {
         region: "North America",
-        marketShare: 35,
+        marketShare: 40,
       },
       {
         region: "Europe",
-        marketShare: 28,
+        marketShare: 30,
       },
       {
         region: "Asia Pacific",
-        marketShare: 25,
+        marketShare: 20,
       },
       {
         region: "Rest of World",
-        marketShare: 12,
+        marketShare: 10,
       },
     ],
   },
-  ecommerceAnalyticsReports: {
+  analyticsReports: {
     monthlySummary: {
+      title: "Monthly Summary",
       metrics: [
         {
           name: "Active Users",
-          value: "↑ 15K",
+          value: "↑ 10K",
         },
         {
           name: "Engagement Rate",
-          value: "↑ 65%",
+          value: "↑ 60%",
         },
         {
           name: "Content Views",
-          value: "↑ 35K",
+          value: "↑ 30K",
         },
       ],
     },
-    demographics: [
+    userDemographics: [
       {
         ageGroup: "Age 18-34",
-        percentage: 45,
+        percentage: 50,
       },
       {
         ageGroup: "Age 35-54",
-        percentage: 35,
+        percentage: 30,
       },
       {
         ageGroup: "Age 55+",
@@ -240,33 +254,36 @@ const data = {
     ],
     contentPerformance: [
       {
-        contentType: "Health Tips",
-        ctr: 85,
-      },
-      {
-        contentType: "Wellness Guides",
+        contentType: "Education Tips",
         ctr: 80,
       },
       {
-        contentType: "Mental Health",
-        ctr: 75,
+        contentType: "Career Development",
+        ctr: 70,
+      },
+      {
+        contentType: "Personalized Learning",
+        ctr: 60,
       },
     ],
   },
 };
 
-const Insights = ({ data }) => {
+const Insights = ({data}) => {
   if (!data) {
     return <div>Loading...</div>;
   }
   // Extract required data
   const visualInsights = data.visualizedInsights;
   const engagementData = data.engagementAnalysis;
-  const marketData =
-    data.globalHealthAndWellnessMarket || data.globalEcommerceMarket; // after the visualizedInsights some thing data come add that here
-  // const visualInsights = data.visualizedInsights;
-  // const engagementData = data.engagementAnalysis;
-  // const marketData = data.globalEcommerceMarket || data.globalHealthAndWellnessMarket // after the visualizedInsights some thing data come add that here
+  const markettrend = Object.values(data);
+  const globalTrendsValues = Object.keys(data)
+  .filter(key => key.toLowerCase().includes('global')) // Find keys containing 'global'
+  .map(key => data[key]); // Get the corresponding array values
+
+  console.log('globalTrends', globalTrendsValues[0]);
+  const marketData = globalTrendsValues[0].regions; 
+  console.log('marketData', marketData);
 
   return (
     <div id="insights" className="py-10 px-6 bg-white">
@@ -319,7 +336,8 @@ const Insights = ({ data }) => {
                           {item.painPoint ||
                             item.sentiment ||
                             item.company ||
-                            item.metric}
+                            item.metric ||
+                            item.trend}
                         </span>
                         <span className="text-sm font-medium text-blue-600">
                           {item.percentage || item.marketShare || item.value}%
@@ -353,7 +371,7 @@ const Insights = ({ data }) => {
               User Engagement Metrics
             </h3>
             <div className="space-y-6">
-              {engagementData?.contentFormatPerformance?.map(
+              {engagementData.contentFormatPerformance?.map(
                 (format, index) => (
                   <div key={index} className="bg-white p-4 rounded-lg">
                     <div className="flex items-center justify-between mb-2">
@@ -382,30 +400,32 @@ const Insights = ({ data }) => {
             Market Share Breakdown
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-            {Array.isArray(marketData) && marketData.map((region, index) => (
-              <div
-                key={index}
-                className="bg-white p-4 rounded-lg border border-gray-100"
-              >
-                <h4 className="text-lg font-medium text-gray-800">
-                  {region.region}
-                </h4>
+            {Array.isArray(marketData) &&
+              marketData.map((region, index) => (
                 <div
-                  className={`mt-2 text-2xl font-bold ${
-                    index === 0
-                      ? "text-blue-600"
-                      : index === 1
-                      ? "text-green-600"
-                      : index === 2
-                      ? "text-purple-600"
-                      : "text-red-600"
-                  }`}
+                  key={index}
+                  className="bg-white p-4 rounded-lg border border-gray-100"
                 >
-                  {region.marketShare}%
+                  {console.log("region", marketData)}
+                  <h4 className="text-lg font-medium text-gray-800">
+                    {region.region}
+                  </h4>
+                  <div
+                    className={`mt-2 text-2xl font-bold ${
+                      index === 0
+                        ? "text-blue-600"
+                        : index === 1
+                        ? "text-green-600"
+                        : index === 2
+                        ? "text-purple-600"
+                        : "text-red-600"
+                    }`}
+                  >
+                    {region.marketShare}%
+                  </div>
+                  <p className="text-sm text-gray-600">Market Share</p>
                 </div>
-                <p className="text-sm text-gray-600">Market Share</p>
-              </div>
-            ))}
+              ))}
           </div>
         </div>
       </div>

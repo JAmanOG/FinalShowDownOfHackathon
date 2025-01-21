@@ -50,262 +50,291 @@ const ytvideo = [
   },
 ];
 const data = {
-  userPainPointsAnalysis: {
-    productQualityIssues: {
-      issues: [
-        "Wrong product received",
-        "Product without price tag",
-        "Quality difference between website and actual product",
+  "userPainPointsAnalysis": [
+      {
+          "title": "Product Quality Issues",
+          "issues": [
+              "Wrong product received",
+              "Product without price tag",
+              "Quality difference between website and actual product"
+          ]
+      },
+      {
+          "title": "Customer Service Issues",
+          "issues": [
+              "No option to call customer care",
+              "Chat option not effective",
+              "No proper solution provided"
+          ]
+      },
+      {
+          "title": "Order Fulfillment Issues",
+          "issues": [
+              "Delayed delivery",
+              "Product lost during shipping",
+              "No consideration for customer's request"
+          ]
+      }
+  ],
+  "impactScale": [
+      {
+          "title": "Product Quality Impact",
+          "percentage": 90
+      },
+      {
+          "title": "Customer Service Impact",
+          "percentage": 85
+      },
+      {
+          "title": "Order Fulfillment Impact",
+          "percentage": 80
+      }
+  ],
+  "sentimentAnalysis": {
+      "overallSentiment": {
+          "positive": 10,
+          "negative": 80,
+          "neutral": 10
+      },
+      "emotionalCategories": {
+          "negativeEmotions": [
+              {
+                  "emotion": "Frustration",
+                  "intensity": 90
+              },
+              {
+                  "emotion": "Anger",
+                  "intensity": 0
+              },
+              {
+                  "emotion": "Disappointment",
+                  "intensity": 0
+              }
+          ],
+          "neutralEmotions": [
+              {
+                  "emotion": "Curiosity",
+                  "intensity": 70
+              },
+              {
+                  "emotion": "Skepticism",
+                  "intensity": 0
+              },
+              {
+                  "emotion": "Indifference",
+                  "intensity": 0
+              }
+          ]
+      },
+      "sentimentIntensity": [
+          {
+              "emotion": "Frustration",
+              "percentage": 90
+          },
+          {
+              "emotion": "Curiosity",
+              "percentage": 70
+          }
+      ]
+  },
+  "engagementAnalysis": {
+      "effectiveHooks": [
+          {
+              "quote": "Myntra is the most bogus e-commerce website that there is.",
+              "engagement": "High engagement rate"
+          },
+          {
+              "quote": "I lost 1000 bucks in the process.",
+              "engagement": "Most shared"
+          }
       ],
-      impactScale: {
-        productQualityImpact: 90,
-      },
-    },
-    customerServiceIssues: {
-      challenges: [
-        "No option to call customer care",
-        "Chat option not effective",
-        "No proper solution provided",
+      "ctaPerformance": [
+          {
+              "cta": "Never going to buy anything there and I won’t even recommend anyone to buy from there.",
+              "conversion": 100
+          },
+          {
+              "cta": "This is a clear fraud.",
+              "conversion": 90
+          },
+          {
+              "cta": "Its the worst experience!!",
+              "conversion": 80
+          }
       ],
-      impactScale: {
-        customerServiceImpact: 85,
-      },
-    },
-    orderFulfillmentIssues: {
-      keyProblems: [
-        "Delayed delivery",
-        "Product lost during shipping",
-        "No consideration for customer's request",
+      "contentFormatPerformance": [
+          {
+              "format": "Personal Stories",
+              "engagement": 90,
+              "description": "Highest engagement rate among all content formats"
+          },
+          {
+              "format": "Listicles",
+              "engagement": 80,
+              "description": "Most shared content format"
+          },
+          {
+              "format": "Infographics",
+              "engagement": 85,
+              "description": "Highest information retention rate"
+          }
+      ]
+  },
+  "competitorInsights": {
+      "marketShareBreakdown": [
+          {
+              "title": "E-commerce Websites",
+              "marketShare": 60,
+              "growthRate": 20
+          },
+          {
+              "title": "Physical Retailers",
+              "marketShare": 20,
+              "growthRate": 15
+          },
+          {
+              "title": "Other Competitors",
+              "marketShare": 20,
+              "growthRate": 10
+          }
+      ]
+  },
+  "trendsAndPatterns": {
+      "eCommerceTrends": [
+          {
+              "trend": "Mobile Commerce",
+              "percentage": 80
+          },
+          {
+              "trend": "Personalization",
+              "percentage": 70
+          },
+          {
+              "trend": "Social Media",
+              "percentage": 60
+          }
       ],
-      impactScale: {
-        orderFulfillmentImpact: 80,
-      },
-    },
+      "userBehaviorPatterns": [
+          {
+              "pattern": "Product Research",
+              "percentage": 80
+          },
+          {
+              "pattern": "Social Proof",
+              "percentage": 70
+          },
+          {
+              "pattern": "Reviews",
+              "percentage": 60
+          }
+      ]
   },
-  sentimentAnalysis: {
-    overallSentimentDistribution: {
-      positive: 10,
-      negative: 80,
-      neutral: 10,
-    },
-    emotionalCategories: {
-      negativeEmotions: [
-        {
-          emotion: "Frustration",
-          intensity: 90,
-        },
-        "Anger",
-        "Disappointment",
+  "visualizedInsights": {
+      "topEcommerceTrends": [
+          {
+              "trend": "Mobile Commerce",
+              "percentage": 80
+          },
+          {
+              "trend": "Personalization",
+              "percentage": 70
+          },
+          {
+              "trend": "Social Media",
+              "percentage": 60
+          }
       ],
-      neutralEmotions: [
-        {
-          emotion: "Curiosity",
-          intensity: 75,
-        },
-        "Skepticism",
-        "Indifference",
+      "userEngagementMetrics": [
+          {
+              "metric": "Average Time Spent",
+              "value": "10 minutes",
+              "percentageChange": 30,
+              "description": "per session"
+          },
+          {
+              "metric": "Click-through Rate",
+              "value": "4.5%",
+              "percentageChange": 25,
+              "description": "average CTR"
+          },
+          {
+              "metric": "Content Shares",
+              "value": "2.5K",
+              "percentageChange": 20,
+              "description": "monthly average"
+          }
+      ]
+  },
+  "globalMarket": {
+      "regions": [
+          {
+              "region": "North America",
+              "marketShare": 40
+          },
+          {
+              "region": "Europe",
+              "marketShare": 30
+          },
+          {
+              "region": "Asia Pacific",
+              "marketShare": 20
+          },
+          {
+              "region": "Rest of World",
+              "marketShare": 10
+          }
+      ]
+  },
+  "analyticsReports": {
+      "monthlySummary": {
+          "title": "Monthly Summary",
+          "metrics": [
+              {
+                  "name": "Active Users",
+                  "value": "15K"
+              },
+              {
+                  "name": "Engagement Rate",
+                  "value": "60%"
+              },
+              {
+                  "name": "Content Views",
+                  "value": "30K"
+              }
+          ]
+      },
+      "demographics": [
+          {
+              "ageGroup": "Age 18-34",
+              "percentage": 50
+          },
+          {
+              "ageGroup": "Age 35-54",
+              "percentage": 30
+          },
+          {
+              "ageGroup": "Age 55+",
+              "percentage": 20
+          }
       ],
-    },
-  },
-  engagementAnalysis: {
-    effectiveHooks: [
-      {
-        quote: "Myntra is the most bogus e-commerce website that there is.",
-        engagement: "High engagement rate",
-      },
-      {
-        quote: "I lost 1000 bucks in the process.",
-        engagement: "Most shared",
-      },
-    ],
-    callToActionPerformance: [
-      {
-        cta: "Never going to buy anything there and I won’t even recommend anyone to buy from there.",
-        conversion: 90,
-      },
-      {
-        cta: "This is a clear fraud.",
-        conversion: 85,
-      },
-      {
-        cta: "Its the worst experience!!",
-        conversion: 80,
-      },
-    ],
-    contentFormatPerformance: [
-      {
-        format: "Personal Stories",
-        engagement: 92,
-        description: "Highest engagement rate among all content formats",
-      },
-      {
-        format: "Listicles",
-        engagement: 80,
-        description: "Most shared content format",
-      },
-      {
-        format: "Infographics",
-        engagement: 85,
-        description: "Highest information retention rate",
-      },
-    ],
-  },
-  competitorInsights: {
-    marketShareBreakdown: [
-      {
-        company: "Amazon",
-        marketShare: 30,
-        growthRate: 25,
-      },
-      {
-        company: "Flipkart",
-        marketShare: 25,
-        growthRate: 20,
-      },
-      {
-        company: "Myntra",
-        marketShare: 20,
-        growthRate: 15,
-      },
-      {
-        company: "Other E-commerce Websites",
-        marketShare: 25,
-        growthRate: 10,
-      },
-    ],
-  },
-  trendsAndPatterns: {
-    eCommerceTrends: [
-      {
-        trend: "Mobile Commerce",
-        percentage: 90,
-      },
-      {
-        trend: "App-based Shopping",
-        percentage: 80,
-      },
-      {
-        trend: "Personalization",
-        percentage: 75,
-      },
-    ],
-    userBehaviorPatterns: [
-      {
-        pattern: "Shopping Habits",
-        percentage: 80,
-      },
-      {
-        pattern: "Product Research",
-        percentage: 75,
-      },
-      {
-        pattern: "Social Media Influence",
-        percentage: 60,
-      },
-    ],
-  },
-  visualizedInsights: {
-    topEcommerceTrends: [
-      {
-        trend: "Mobile Commerce",
-        percentage: 90,
-      },
-      {
-        trend: "App-based Shopping",
-        percentage: 80,
-      },
-      {
-        trend: "Personalization",
-        percentage: 75,
-      },
-    ],
-    userEngagementMetrics: [
-      {
-        metric: "Average Time Spent",
-        value: "10 minutes",
-        percentageChange: 40,
-      },
-      {
-        metric: "Click-through Rate",
-        value: "4.5%",
-        percentageChange: 30,
-      },
-      {
-        metric: "Content Shares",
-        value: "2.5K",
-        percentageChange: 25,
-      },
-    ],
-  },
-  globalEcommerceMarket: {
-    regions: [
-      {
-        region: "North America",
-        marketShare: 35,
-      },
-      {
-        region: "Europe",
-        marketShare: 28,
-      },
-      {
-        region: "Asia Pacific",
-        marketShare: 25,
-      },
-      {
-        region: "Rest of World",
-        marketShare: 12,
-      },
-    ],
-  },
-  ecommerceAnalyticsReports: {
-    monthlySummary: {
-      metrics: [
-        {
-          name: "Active Users",
-          value: "↑ 15K",
-        },
-        {
-          name: "Engagement Rate",
-          value: "↑ 65%",
-        },
-        {
-          name: "Content Views",
-          value: "↑ 35K",
-        },
-      ],
-    },
-    demographics: [
-      {
-        ageGroup: "Age 18-34",
-        percentage: 45,
-      },
-      {
-        ageGroup: "Age 35-54",
-        percentage: 35,
-      },
-      {
-        ageGroup: "Age 55+",
-        percentage: 20,
-      },
-    ],
-    contentPerformance: [
-      {
-        contentType: "Health Tips",
-        ctr: 85,
-      },
-      {
-        contentType: "Wellness Guides",
-        ctr: 80,
-      },
-      {
-        contentType: "Mental Health",
-        ctr: 75,
-      },
-    ],
-  },
-};
+      "contentPerformance": [
+          {
+              "contentType": "Product Reviews",
+              "ctr": 85
+          },
+          {
+              "contentType": "Product Demos",
+              "ctr": 80
+          },
+          {
+              "contentType": "Product Comparisons",
+              "ctr": 75
+          }
+      ]
+  }
+}
 
-const Competitors = ({ data }) => {
+const Competitors = ({data}) => {
   const getVideoId = (url) => {
     const regExp =
       /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
@@ -359,11 +388,18 @@ const Competitors = ({ data }) => {
   };
 
   // Extract market data from the competitorInsights section
+  const trendsArray = Object.values(data.trendsAndPatterns);
+  const trendsArraykeys = Object.keys(data.trendsAndPatterns);
 
-  const marketShareData = data?.competitorInsights?.marketShareBreakdown || [];
-  const trendsData =
-    data?.industryTrendsPatterns?.eCommerceIndustryTrends || data.trendsAndPatterns.eCommerceTrends|| [];
-  console.log("data",trendsData);
+  const competitorArray = Object.values(data.competitorInsights);
+
+  const marketShareData = data.competitorInsights.competitors;
+  const educationTrends = trendsArray[0];
+
+  const Key= trendsArraykeys[0];
+
+  const keyforcompetitor = competitorArray[0];
+
   return (
     <div id="competitors" className="py-10 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
@@ -373,14 +409,14 @@ const Competitors = ({ data }) => {
 
         {/* Market Share Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          {marketShareData.map((competitor, index) => (
+          {keyforcompetitor.map((competitor, index) => (
             <div
               key={index}
               className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-all"
             >
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-lg font-semibold text-gray-800">
-                  {competitor.category || competitor.company}
+                  {competitor.title}
                 </h3>
                 <svg
                   className={`w-8 h-8 text-${getColor(index)}-500`}
@@ -396,18 +432,22 @@ const Competitors = ({ data }) => {
                   <span className="w-3 h-3 bg-green-500 rounded-full mr-2"></span>
                   Market Share: {competitor.marketShare}%
                 </div>
+                <div className="flex items-center">
+                  <span className="w-3 h-3 bg-blue-500 rounded-full mr-2"></span>
+                  Growth Rate: {competitor.growthRate}%
+                </div>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Industry Trends */}
+        {/* Education Industry Trends */}
         <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
           <h3 className="text-xl font-semibold mb-6 text-gray-800">
-            Industry Trends
+            {Key}
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {trendsData.map((trend, index) => (
+            {educationTrends.map((trend, index) => (
               <div
                 key={index}
                 className="p-4 bg-white rounded-lg border border-gray-100"
@@ -424,12 +464,10 @@ const Competitors = ({ data }) => {
                     </svg>
                   </div>
                   <h4 className="ml-3 text-lg font-medium text-gray-800">
-                    {trend.impact || trend.trend}
+                    {trend.trend}
                   </h4>
                 </div>
-                <p className="text-sm text-gray-600">
-                  Growth: {trend.percentage}%
-                </p>
+                <p className="text-sm text-gray-600">Growth: {trend.percentage}%</p>
               </div>
             ))}
           </div>
@@ -496,26 +534,20 @@ const Competitors = ({ data }) => {
 
 Competitors.propTypes = {
   data: PropTypes.shape({
-    competitorInsights: PropTypes.shape({
-      marketShareBreakdown: PropTypes.arrayOf(
+    "Competitor Insights": PropTypes.shape({
+      "Market Share Breakdown": PropTypes.arrayOf(
         PropTypes.shape({
-          category: PropTypes.string,
+          title: PropTypes.string,
           marketShare: PropTypes.number,
           growthRate: PropTypes.number,
         })
       ),
     }),
-    trendsAndPatterns: PropTypes.shape({
-      foodSafetyTrends: PropTypes.arrayOf(
+    "Trends and Patterns": PropTypes.shape({
+      "Education Industry Trends": PropTypes.arrayOf(
         PropTypes.shape({
           trend: PropTypes.string,
-          percentage: PropTypes.number,
-        })
-      ),
-      foodAccessibilityTrends: PropTypes.arrayOf(
-        PropTypes.shape({
-          trend: PropTypes.string,
-          percentage: PropTypes.number,
+          growth: PropTypes.number,
         })
       ),
     }),

@@ -1,63 +1,74 @@
 import React from "react";
 const data = {
-  "userPainPointsAnalysis": {
-      "productQualityIssues": {
+  "userPainPointsAnalysis": [
+      {
+          "title": "Product Quality Issues",
           "issues": [
               "Wrong product received",
               "Product without price tag",
               "Quality difference between website and actual product"
           ],
           "impactScale": {
-              "productQualityImpact": 90
+              "Product Quality Impact": 90
           }
       },
-      "customerServiceIssues": {
-          "challenges": [
+      {
+          "title": "Customer Service Issues",
+          "issues": [
               "No option to call customer care",
               "Chat option not effective",
               "No proper solution provided"
           ],
           "impactScale": {
-              "customerServiceImpact": 85
+              "Customer Service Impact": 85
           }
       },
-      "orderFulfillmentIssues": {
-          "keyProblems": [
+      {
+          "title": "Order Fulfillment Issues",
+          "issues": [
               "Delayed delivery",
               "Product lost during shipping",
               "No consideration for customer's request"
           ],
           "impactScale": {
-              "orderFulfillmentImpact": 80
-          }
-      },
-      "returnPolicyIssues": {
-          "challenges": [
-              "Return declined due to missing tags",
-              "No clear return policy",
-              "No proper solution provided"
-          ],
-          "impactScale": {
-              "returnPolicyImpact": 75
+              "Order Fulfillment Impact": 80
           }
       }
-  },
+  ],
   "sentimentAnalysis": {
       "overallSentimentDistribution": {
-          "positive": 10,
-          "negative": 80,
-          "neutral": 10
+          "Positive": 10,
+          "Negative": 80,
+          "Neutral": 10
       },
       "emotionalCategories": {
-          "negativeEmotions": [
-              "Frustration",
-              "Anger",
-              "Disappointment"
+          "Negative Emotions": [
+              {
+                  "emotion": "Frustration",
+                  "intensity": 90
+              },
+              {
+                  "emotion": "Anger",
+                  "intensity": 0
+              },
+              {
+                  "emotion": "Disappointment",
+                  "intensity": 0
+              }
           ],
-          "neutralEmotions": [
-              "Curiosity",
-              "Skepticism",
-              "Indifference"
+          "Neutral Emotions": [
+              {
+                  "emotion": "Curiosity",
+                  "intensity": 75
+              },
+              {
+                  "emotion": "Skepticism",
+                  "intensity": 0
+              },
+              {
+                  "emotion": "Indifference",
+                  "intensity": 0
+              }
           ]
       }
   },
@@ -75,11 +86,11 @@ const data = {
       "callToActionPerformance": [
           {
               "cta": "Never going to buy anything there and I won’t even recommend anyone to buy from there.",
-              "conversion": 100
+              "conversion": 90
           },
           {
               "cta": "This is a clear fraud.",
-              "conversion": 90
+              "conversion": 85
           },
           {
               "cta": "Its the worst experience!!",
@@ -89,17 +100,18 @@ const data = {
       "contentFormatPerformance": [
           {
               "format": "Personal Stories",
-              "engagement": 95,
-              "description": "Highest engagement rate among all content formats"
+              "engagement": 92,
+              "description": "Highest engagement rate among all content formats",
+              "userRetentionRate": 92
           },
           {
               "format": "Listicles",
-              "engagement": 85,
+              "engagement": 80,
               "description": "Most shared content format"
           },
           {
               "format": "Infographics",
-              "engagement": 80,
+              "engagement": 85,
               "description": "Highest information retention rate"
           }
       ]
@@ -107,67 +119,49 @@ const data = {
   "competitorInsights": {
       "marketShareBreakdown": [
           {
-              "category": "E-commerce Websites",
+              "title": "E-commerce Websites",
               "marketShare": 60,
               "growthRate": 20
           },
           {
-              "category": "Physical Stores",
+              "title": "Physical Retail Stores",
               "marketShare": 20,
               "growthRate": 15
           },
           {
-              "category": "Other Competitors",
+              "title": "Other Competitors",
               "marketShare": 20,
               "growthRate": 10
           }
       ]
   },
-  "ourKeyDifferentiators": [
-      {
-          "title": "Personalized Approach",
-          "description": "Tailored solutions for individual customer needs"
-      },
-      {
-          "title": "Customer Service Focus",
-          "description": "Comprehensive customer support and solution"
-      },
-      {
-          "title": "Order Fulfillment Efficiency",
-          "description": "Fast and reliable order delivery and return process"
-      },
-      {
-          "title": "Return Policy Transparency",
-          "description": "Clear and fair return policy"
-      }
-  ],
-  "industryTrendsPatterns": {
-      "eCommerceIndustryTrends": [
+  "trendsAndPatterns": {
+      "eCommerceTrends": [
           {
               "trend": "Mobile Commerce",
               "percentage": 80
           },
           {
-              "trend": "Personalization",
-              "percentage": 75
+              "trend": "App-only Strategy",
+              "percentage": 70
           },
           {
-              "trend": "Customer Service",
-              "percentage": 90
+              "trend": "Personalization",
+              "percentage": 60
           }
       ],
       "userBehaviorPatterns": [
           {
-              "pattern": "E-commerce Content Interest",
-              "growth": 60
+              "pattern": "Shopping Habits",
+              "percentage": 80
           },
           {
-              "pattern": "Personalization Demand",
-              "growth": 80
+              "pattern": "Product Research",
+              "percentage": 70
           },
           {
-              "pattern": "Customer Service Expectations",
-              "growth": 90
+              "pattern": "Social Media Influence",
+              "percentage": 60
           }
       ]
   },
@@ -178,60 +172,74 @@ const data = {
               "percentage": 80
           },
           {
-              "trend": "Personalization",
-              "percentage": 75
+              "trend": "App-only Strategy",
+              "percentage": 70
           },
           {
-              "trend": "Customer Service",
-              "percentage": 90
+              "trend": "Personalization",
+              "percentage": 60
           }
       ],
       "userEngagementMetrics": [
           {
               "metric": "Average Time Spent",
-              "value": 10,
-              "percentageChange": 40
+              "value": "10 minutes per session",
+              "percentageChange": 30
           },
           {
               "metric": "Click-through Rate",
-              "value": 3.5,
+              "value": "4.5% average CTR",
               "percentageChange": 25
           },
           {
               "metric": "Content Shares",
-              "value": 1500,
+              "value": "2.5K monthly average",
               "percentageChange": 20
           }
       ]
   },
-  "globalEcommerceMarket": [
-      {
-          "region": "North America",
-          "marketShare": 40
-      },
-      {
-          "region": "Europe",
-          "marketShare": 30
-      },
-      {
-          "region": "Asia Pacific",
-          "marketShare": 20
-      },
-      {
-          "region": "Rest of World",
-          "marketShare": 10
-      }
-  ],
+  "globalEcommerceMarket": {
+      "regions": [
+          {
+              "region": "North America",
+              "marketShare": 40
+          },
+          {
+              "region": "Europe",
+              "marketShare": 30
+          },
+          {
+              "region": "Asia Pacific",
+              "marketShare": 20
+          },
+          {
+              "region": "Rest of World",
+              "marketShare": 10
+          }
+      ]
+  },
   "ecommerceAnalyticsReports": {
       "monthlySummary": {
-          "activeUsers": 10000,
-          "engagementRate": 60,
-          "contentViews": 30000
+          "title": "Monthly Summary",
+          "metrics": [
+              {
+                  "name": "Active Users",
+                  "value": "10K"
+              },
+              {
+                  "name": "Engagement Rate",
+                  "value": "60%"
+              },
+              {
+                  "name": "Content Views",
+                  "value": "30K"
+              }
+          ]
       },
       "demographics": [
           {
               "ageGroup": "Age 18-34",
-              "percentage": 40
+              "percentage": 50
           },
           {
               "ageGroup": "Age 35-54",
@@ -239,7 +247,7 @@ const data = {
           },
           {
               "ageGroup": "Age 55+",
-              "percentage": 30
+              "percentage": 20
           }
       ],
       "contentPerformance": [
@@ -248,41 +256,29 @@ const data = {
               "ctr": 85
           },
           {
-              "contentType": "Customer Testimonials",
+              "contentType": "Product Comparisons",
               "ctr": 80
           },
           {
-              "contentType": "Product Comparisons",
+              "contentType": "Product Recommendations",
               "ctr": 75
           }
       ]
-  },
-  "wordcloud": [
-      "cleanser",
-      "moisturizer",
-      "serum",
-      "anti-aging",
-      "exfoliating",
-      "toner",
-      "vitamin C",
-      "hyaluronic acid",
-      "collagen",
-      "acne",
-      "brightening",
-      "skin care",
-      "retinol",
-      "facial mask",
-      "natural",
-      "organic",
-      "SPF",
-      "sunscreen"
-  ]
+  }
 }
-const Painpoints = ({data}) => {
-  const categories = Object.keys(data.userPainPointsAnalysis).map(key => ({
-    title: key,
-    ...data.userPainPointsAnalysis[key]
+const Painpoints = ({data}) => { // Remove data from props
+  const categories = data.userPainPointsAnalysis; // Use data constant directly
+
+  let impactScale = [];
+
+  impactScale = data?.impactScale ;
+
+  if(impactScale.length === 0) {
+  impactScale = categories?.map((category) => ({
+    title: Object.keys(category?.impactScale)[0],
+    percentage: Object.values(category?.impactScale)[0]
   }));
+  }
 
   // Helper function for color selection
   const getColorClass = (index) => {
@@ -305,6 +301,7 @@ const Painpoints = ({data}) => {
         return "purple";
     }
   };
+
 
   return (
     <div id="painpoints" className="py-10 px-6 bg-white">
@@ -343,7 +340,7 @@ const Painpoints = ({data}) => {
                 {(
                   category.issues ||
                   category.challenges ||
-                  category.keyProblems
+                  category["key problems"]
                 )?.map((item, i) => (
                   <li key={i}>• {item}</li>
                 ))}
@@ -357,31 +354,29 @@ const Painpoints = ({data}) => {
             Impact Scale
           </h3>
           <div className="space-y-4">
-            {categories.map((category, index) => (
-              category.impactScale && (
-                <div key={index} className="relative pt-1">
-                  <div className="flex items-center justify-between mb-2">
-                    <div>
-                      <span className="text-sm font-semibold text-gray-700">
-                        {category.title} Impact
-                      </span>
-                    </div>
-                    <div>
-                      <span className="text-sm font-semibold text-gray-700">
-                        {Object.values(category.impactScale)[0]}%
-                      </span>
-                    </div>
+            {impactScale?.map((category, index) => (
+              <div key={index} className="relative pt-1">
+                <div className="flex items-center justify-between mb-2">
+                  <div>
+                    <span className="text-sm font-semibold text-gray-700">
+                      {category.title}
+                    </span>
                   </div>
-                  <div className="overflow-hidden h-2 text-xs flex rounded bg-gray-200">
-                    <div
-                      style={{ width: `${Object.values(category.impactScale)[0]}%` }}
-                      className={`shadow-none flex flex-col justify-center bg-${getColorClass(
-                        index
-                      )}-500`}
-                    ></div>
+                  <div>
+                    <span className="text-sm font-semibold text-gray-700">
+                      {category.percentage}%
+                    </span>
                   </div>
                 </div>
-              )
+                <div className="overflow-hidden h-2 text-xs flex rounded bg-gray-200">
+                  <div
+                    style={{ width: `${category.percentage}%` }}
+                    className={`shadow-none flex flex-col justify-center bg-${getColorClass(
+                      index
+                    )}-500`}
+                  ></div>
+                </div>
+              </div>
             ))}
           </div>
         </div>

@@ -2,154 +2,273 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const data = {
-  painPoints: [
+  userPainPointsAnalysis: [
     {
-      title: "Food Safety Concerns",
+      title: "Education and Career",
       issues: [
-        "Fear of contaminated food",
-        "Concerns about pesticide use",
-        "Uncertainty about food labeling",
+        "Difficulty in finding a suitable education platform",
+        "Lack of job opportunities after completing a course",
+        "Inefficient use of time and money",
       ],
     },
     {
-      title: "Food Accessibility",
-      challenges: [
-        "Limited access to healthy food options",
-        "High cost of organic or specialty foods",
-        "Difficulty in finding affordable food options",
+      title: "Communication and Support",
+      issues: [
+        "Difficulty in getting in touch with case agents or faculties",
+        "Lack of clear updates and communication from institutions",
+        "Feeling overwhelmed by the process",
       ],
     },
     {
-      title: "Food Production Transparency",
-      keyProblems: [
-        "Lack of transparency in food production processes",
-        "Uncertainty about food sourcing and quality",
-        "Concerns about animal welfare and environmental impact",
+      title: "Trust and Credibility",
+      issues: [
+        "Difficulty in trusting institutions or platforms",
+        "Lack of credibility and transparency",
+        "Feeling uncertain about the future",
       ],
     },
   ],
   impactScale: [
-    { title: "Food Safety Concern Impact", percentage: 80 },
-    { title: "Food Accessibility Impact", percentage: 70 },
-    { title: "Food Production Transparency Impact", percentage: 60 },
+    {
+      title: "Education and Career Impact",
+      percentage: 80,
+    },
+    {
+      title: "Communication and Support Impact",
+      percentage: 70,
+    },
+    {
+      title: "Trust and Credibility Impact",
+      percentage: 60,
+    },
   ],
   sentimentAnalysis: {
-    overallSentiment: { positive: 55, negative: 20, neutral: 25 },
+    overallSentiment: {
+      positive: 40,
+      negative: 30,
+      neutral: 30,
+    },
     emotionalCategories: {
       positive: ["Hope", "Inspiration", "Motivation"],
-      negative: ["Anxiety", "Frustration", "Disappointment"],
+      negative: ["Frustration", "Disappointment", "Anger"],
       neutral: ["Curiosity", "Interest", "Skepticism"],
     },
     sentimentIntensity: [
-      { emotion: "Hope", percentage: 80 },
-      { emotion: "Anxiety", percentage: 60 },
-      { emotion: "Curiosity", percentage: 70 },
+      {
+        emotion: "Hope",
+        percentage: 60,
+      },
+      {
+        emotion: "Frustration",
+        percentage: 50,
+      },
+      {
+        emotion: "Curiosity",
+        percentage: 40,
+      },
     ],
   },
   engagementAnalysis: {
     effectiveHooks: [
       {
-        quote:
-          "The reality is that the farmers are not being paid a fair price for their produce.",
+        quote: "One and only best stop for CANADA Process",
         engagement: "High engagement rate",
       },
       {
-        quote: "If you\u2019re looking for vegan food hacks - look no further.",
+        quote: "I am a student of Profound Institute",
         engagement: "Most shared",
       },
     ],
-    callToActionPerformance
-: [
-      { cta: "Try replicating the dish with cauliflower!", conversion: 80 },
-      { cta: "Schedule routine check-ups...", conversion: 65 },
-      { cta: "Don\u2019t spoil your health...", conversion: 55 },
+    ctaPerformance: [
+      {
+        cta: "DO CONTACT AND REACH AT YOUR DREAM PLACE",
+        conversion: 80,
+      },
+      {
+        cta: "Check out www.iversity.org",
+        conversion: 60,
+      },
+      {
+        cta: "I would suggest the following five reasons",
+        conversion: 50,
+      },
     ],
     contentFormatPerformance: [
       {
         format: "Personal Stories",
-        engagement: 85,
+        engagement: 55,
         description: "Highest engagement rate among all content formats",
       },
       {
         format: "Listicles",
-        engagement: 75,
+        engagement: 40,
         description: "Most shared content format",
       },
       {
         format: "Infographics",
-        engagement: 80,
+        engagement: 50,
         description: "Highest information retention rate",
       },
     ],
   },
   competitorInsights: {
-    marketShareBreakdown: [
+    competitors: [
       {
-        category: "Food Production Companies",
+        title: "Education Platforms",
         marketShare: 40,
         growthRate: 25,
       },
-      { category: "Food Retailers", marketShare: 30, growthRate: 20 },
-      { category: "Food Service Providers", marketShare: 20, growthRate: 15 },
-      { category: "Food Manufacturers", marketShare: 10, growthRate: 10 },
+      {
+        title: "Institutional Partnerships",
+        marketShare: 30,
+        growthRate: 20,
+      },
+      {
+        title: "EdTech Accelerators",
+        marketShare: 20,
+        growthRate: 15,
+      },
+      {
+        title: "Individual Educators",
+        marketShare: 10,
+        growthRate: 10,
+      },
     ],
+    keyDifferentiators: [],
   },
   trendsAndPatterns: {
-    foodSafetyTrends: [
-      { trend: "Increased Focus on Food Safety", percentage: 85 },
+    eCommerceTrends: [],
+    userBehaviorPatterns: [
       {
-        trend: "Growing Demand for Organic and Specialty Foods",
-        percentage: 80,
+        pattern: "Education Content Interest",
+        percentage: 50,
       },
-      { trend: "Rise of Food Technology and Innovation", percentage: 75 },
-    ],
-    foodAccessibilityTrends: [
-      { trend: "Growing Concerns about Food Insecurity", percentage: 80 },
       {
-        trend: "Increased Demand for Affordable and Accessible Food Options",
-        percentage: 75,
+        pattern: "Personalization Demand",
+        percentage: 40,
       },
-      { trend: "Rise of Food Delivery and Online Ordering", percentage: 70 },
+      {
+        pattern: "Digital Tool Adoption",
+        percentage: 30,
+      },
     ],
   },
   visualizedInsights: {
-    topFoodSafetyConcerns: [
-      { concern: "Contaminated Food", percentage: 85 },
-      { concern: "Pesticide Use", percentage: 80 },
-      { concern: "Food Labeling", percentage: 75 },
-    ],
-    topFoodAccessibilityChallenges: [
-      { challenge: "Limited Access to Healthy Food Options", percentage: 80 },
-      { challenge: "High Cost of Organic or Specialty Foods", percentage: 75 },
+    CustomerSatisfaction: [
       {
-        challenge: "Difficulty in Finding Affordable Food Options",
-        percentage: 70,
+        title: "Personalized Learning",
+        percentage: 60,
+      },
+      {
+        title: "Online Education Platforms",
+        percentage: 50,
+      },
+      {
+        title: "Artificial Intelligence in Education",
+        percentage: 40,
       },
     ],
-    topFoodProductionTransparencyConcerns: [
+    userEngagementMetrics: [
       {
-        concern: "Lack of Transparency in Food Production Processes",
-        percentage: 80,
+        metric: "Average Time Spent",
+        value: "10 minutes",
+        percentageChange: 30,
+        description: "Per session",
       },
       {
-        concern: "Uncertainty about Food Sourcing and Quality",
-        percentage: 75,
+        metric: "Click-through Rate",
+        value: "3.5%",
+        percentageChange: 25,
+        description: "Average CTR",
       },
       {
-        concern: "Concerns about Animal Welfare and Environmental Impact",
-        percentage: 70,
+        metric: "Content Shares",
+        value: "1.5K",
+        percentageChange: 20,
+        description: "Monthly average",
       },
     ],
   },
+  globalMarket: {
+    regions: [
+      {
+        region: "North America",
+        marketShare: 40,
+      },
+      {
+        region: "Europe",
+        marketShare: 30,
+      },
+      {
+        region: "Asia Pacific",
+        marketShare: 20,
+      },
+      {
+        region: "Rest of World",
+        marketShare: 10,
+      },
+    ],
+  },
+  analyticsReports: {
+    monthlySummary: {
+      title: "Monthly Summary",
+      metrics: [
+        {
+          name: "Active Users",
+          value: "↑ 10K",
+        },
+        {
+          name: "Engagement Rate",
+          value: "↑ 45%",
+        },
+        {
+          name: "Content Views",
+          value: "↑ 30K",
+        },
+      ],
+    },
+    userDemographics: [
+      {
+        ageGroup: "Age 18-34",
+        percentage: 40,
+      },
+      {
+        ageGroup: "Age 35-54",
+        percentage: 30,
+      },
+      {
+        ageGroup: "Age 55+",
+        percentage: 30,
+      },
+    ],
+    contentPerformance: [
+      {
+        contentType: "Education Tips",
+        ctr: 55,
+      },
+      {
+        contentType: "Career Guides",
+        ctr: 50,
+      },
+      {
+        contentType: "Personal Stories",
+        ctr: 45,
+      },
+    ],
+    generatedReports: [],
+    wordcloud: [],
+  },
 };
 
-const EngagementAnalysis = ({ data }) => {
-  if (!data?.engagementAnalysis) {
+const EngagementAnalysis = ({data}) => {
+  if (!data?.["Engagement Analysis"]) {
     return null;
   }
 
-  const { effectiveHooks, callToActionPerformance
-, contentFormatPerformance } = data.engagementAnalysis;
+  const engagementData = data.engagementAnalysis;
+  const effectiveHooks = engagementData.effectiveHooks;
+  const callToActionPerformance = engagementData.ctaPerformance
+  const contentFormatPerformance = engagementData.contentFormatPerformance;
 
   const getColorByIndex = (index) => {
     const colors = ["green", "blue", "purple"];
@@ -216,8 +335,7 @@ const EngagementAnalysis = ({ data }) => {
               Call to Action Performance
             </h3>
             <div className="space-y-4">
-              {callToActionPerformance
-?.map((item, index) => (
+              {callToActionPerformance?.map((item, index) => (
                 <div key={index} className="relative pt-1">
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-sm font-medium text-gray-600">
@@ -295,21 +413,20 @@ const EngagementAnalysis = ({ data }) => {
 
 EngagementAnalysis.propTypes = {
   data: PropTypes.shape({
-    engagementAnalysis: PropTypes.shape({
-      effectiveHooks: PropTypes.arrayOf(
+    "Engagement Analysis": PropTypes.shape({
+      "Effective Hooks": PropTypes.arrayOf(
         PropTypes.shape({
           quote: PropTypes.string,
           engagement: PropTypes.string,
         })
       ),
-      callToActionPerformance
-: PropTypes.arrayOf(
+      "Call-to-Action Performance": PropTypes.arrayOf(
         PropTypes.shape({
           cta: PropTypes.string,
           conversion: PropTypes.number,
         })
       ),
-      contentFormatPerformance: PropTypes.arrayOf(
+      "Content Format Performance": PropTypes.arrayOf(
         PropTypes.shape({
           format: PropTypes.string,
           engagement: PropTypes.number,
