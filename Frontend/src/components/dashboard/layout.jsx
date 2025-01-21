@@ -8,27 +8,33 @@ import Reports from "./reports";
 import Trends from "./Trends.jsx";
 import axios from "axios";
 import { useLocation } from "react-router-dom";
-
+import CustomerFeedback from "./effectivehook.jsx";
 const Layout = () => {
   const location = useLocation();
   const receivedData = location.state; // Access the passed data
 
   console.log(receivedData);
+  
+  // Accessing raw data with optional chaining
   const raw =
-    receivedData?.outputState.data.outputs[0].outputs[0].results.message.data
-      .text || "";
+    receivedData?.outputState?.data?.outputs?.[0]?.outputs?.[0]?.results?.message?.data?.text || "";
 
   console.log("receivedData", receivedData);
-
   console.log("data", raw);
+  const [loading, setLoading] = useState(false);
 
   const [passage, setPassage] = useState("");
+  const [ytvideo, setYtvideo] = useState([]);
   const [wordCloudImage, setWordCloudImage] = useState("");
-  const data = JSON.parse(raw);
+
+  // Parsing the raw data (JSON string)
+  const data = raw ? JSON.parse(raw) : {};
   console.log("data", data);
 
   useEffect(() => {
-    setPassage(data?.wordcloud || "");
+    if (data?.wordcloud) {
+      setPassage(data.wordcloud);
+    }
   }, [data]);
 
   const generateWordCloud = async () => {
@@ -54,17 +60,55 @@ const Layout = () => {
     }
   };
 
+  const ytvideos = async () => {
+    try {
+      setLoading(true);
+
+      const response = await axios.post("http://localhost:5000/fitness-videos", {
+        data: JSON.stringify(data.competitorlist),
+      });
+      console.log(response);
+      const videoData = Array.isArray(response.data) ? response.data : [];
+      setYtvideo(videoData);
+      } catch (error) {
+      console.error("Error fetching YouTube videos:", error);
+      setYtvideo([
+        {
+          title: "Sample Video",
+          description: "Temporary placeholder due to API limitations",
+          viewCount: "0",
+          channelTitle: "Sample Channel",
+          thumbnailUrl: "https://via.placeholder.com/480x360",
+          videoUrl: "#"
+        }
+      ]);
+    }finally {
+      setLoading(false);
+    }
+  };
+
+  // Trigger word cloud generation when passage changes
   useEffect(() => {
-    generateWordCloud();
+    if (passage) {
+      generateWordCloud();
+    }
   }, [passage]);
+
+  useEffect(() => {
+    ytvideos();
+  }, []);
 
   return (
     <>
       <div>
         <Painpoints data={data} />
         <SentimentDonutChart data={data} />
+        <CustomerFeedback data={data} />
         <Engagement data={data} />
-        <Competitors data={data} />
+        <Competitors 
+        data={data} 
+        ytvideo={Array.isArray(ytvideo) ? ytvideo : []}
+      />
         <Trends data={data} />
         <Insights data={data} wordCloudImage={wordCloudImage} />
         <Reports data={data} />

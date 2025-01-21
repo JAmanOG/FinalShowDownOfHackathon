@@ -334,7 +334,7 @@ const data = {
   }
 }
 
-const Competitors = ({data}) => {
+const Competitors = ({data,ytvideo}) => {
   const getVideoId = (url) => {
     const regExp =
       /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
@@ -562,6 +562,12 @@ Competitors.propTypes = {
       videoUrl: PropTypes.string,
     })
   ),
+  loading: PropTypes.bool
+};
+
+Competitors.defaultProps = {
+  ytvideo: [],
+  loading: false
 };
 
 export default Competitors;

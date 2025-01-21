@@ -267,7 +267,7 @@ const data = {
   },
 };
 
-const Reports = () => {
+const Reports = ({data}) => {
   console.log(data);
   // const analyticsData = data.analyticsReports || {};
   const analyticsData = Object.entries(data)
