@@ -1,5 +1,5 @@
 const express = require('express');
-const bodyParser = require('body-parser');  
+const bodyParser = require('body-parser');
 const cors = require('cors');
 const { getFitnessVideosSortedByViews } = require('./ytapi');
 const analyzeReddit = require('./hungface');
@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 
 app.post('/proxy', async (req, res) => {
     const authHeader = req.headers.authorization;
-    console.log('req.body',JSON.stringify(req.body))
+    console.log('req.body', JSON.stringify(req.body))
     if (!authHeader || !authHeader.startsWith('Bearer AstraCS:EZfUbjcgReZiJoOyqsQDFtzs:fd4e4eb15b7447d62a1d75684d4e50b9119e724836002809d18ac3ff3803d931')) {
         return res.status(401).json({ error: 'Invalid authorization header' });
     }
@@ -38,21 +38,33 @@ app.post('/proxy', async (req, res) => {
             },
             body: JSON.stringify(req.body),
         });
-        
+
         const data = await response.json();
-        console.log(data);
         res.status(response.status).json(data);
     } catch (error) {
-        console.log ('Error in proxy', error);
+        console.log('Error in proxy', error);
         res.status(500).json({ error: error.message });
     }
 });
 
 
 app.post('/fitness-videos', async (req, res) => {
-    const { data } = req.body;
-    const results = await getFitnessVideosSortedByViews(data);
-    res.json(results);
+    try {
+        const { data } = req.body;
+        console.log("getting the data ", data);
+
+        // Parse string input if needed
+        const searchTerms = Array.isArray(data) ? data :
+            typeof data === 'string' ? JSON.parse(data) :
+                [data].filter(Boolean);
+
+        const results = await getFitnessVideosSortedByViews(searchTerms);
+        console.log(results);
+        res.json(results);
+    } catch (error) {
+        console.error("Error in /fitness-videos endpoint:", error);
+        res.status(400).json({ error: error.message });
+    }
 });
 
 app.post('/reddit-analysis', async (req, res) => {
@@ -74,6 +86,9 @@ app.post('/generate-word-cloud', async (req, res) => {
     try {
         const { text } = req.body;
 
+        // Convert the array of words to a single string with spaces
+        const words = text.join(' ');
+
         // QuickChart Word Cloud API endpoint
         const apiUrl = 'https://quickchart.io/wordcloud';
 
@@ -82,25 +97,22 @@ app.post('/generate-word-cloud', async (req, res) => {
             method: 'POST',
             url: apiUrl,
             data: {
-                text: text,
-                format: 'png', // Set the format to PNG
-                width: 800,    // Set the width of the image
-                height: 600,   // Set the height of the image
-                fontFamily: 'Arial',  // Set the font family
-                fontWeight: 'normal',  // Set the font weight
-                fontScale: 20,         // Set the font scale
-                scale: 'linear',       // Set the scale
-                padding: 2             // Set the padding
+                text: words,  // Use the joined string here
+                format: 'png',
+                width: 800,
+                height: 600,
+                fontFamily: 'Arial',
+                fontWeight: 'normal',
+                fontScale: 20,
+                scale: 'linear',
+                padding: 2
             },
-            // Set the response type to 
-            // arraybuffer to handle image data
             responseType: 'arraybuffer'
         };
 
-        // Make a POST request
-        // to QuickChart Word Cloud API
+        // Make a POST request to QuickChart Word Cloud API
         const response = await axios(options);
-
+        console.log('Word cloud generated successfully', response.data);
         // Send the image data back to the frontend
         res.send(response.data);
     } catch (error) {
@@ -108,7 +120,6 @@ app.post('/generate-word-cloud', async (req, res) => {
         res.status(500).json({ error: 'Internal server error' });
     }
 });
-
 
 
 app.listen(PORT, () => {

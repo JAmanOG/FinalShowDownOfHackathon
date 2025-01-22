@@ -335,6 +335,7 @@ const data = {
 }
 
 const Competitors = ({data,ytvideo}) => {
+  console.log("Video Data", ytvideo);
   const getVideoId = (url) => {
     const regExp =
       /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
@@ -475,58 +476,59 @@ const Competitors = ({data,ytvideo}) => {
 
         {/* Video Analysis */}
         {ytvideo && ytvideo.length > 0 && (
-          <div className="mt-12 bg-gray-50 p-6 rounded-lg border border-gray-200">
-            <h3 className="text-xl font-semibold mb-6 text-gray-800">
-              Competitor Video Analysis
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {ytvideo.map((video, index) => (
-                <div
-                  key={index}
-                  className="bg-white rounded-lg border border-gray-100 overflow-hidden hover:shadow-lg transition-all"
-                >
-                  <div className="relative pb-[56.25%] h-0">
-                    <iframe
-                      className="absolute top-0 left-0 w-full h-full"
-                      src={`https://www.youtube.com/embed/${getVideoId(
-                        video.videoUrl
-                      )}`}
-                      title={video.title}
-                      border="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    ></iframe>
-                  </div>
-                  <div className="p-4">
-                    <h4 className="font-medium text-gray-800 mb-2 line-clamp-2">
-                      {video.title}
-                    </h4>
-                    <div className="flex items-center justify-between text-sm text-gray-600">
-                      <span className="flex items-center">
-                        <svg
-                          className="w-4 h-4 mr-1"
-                          fill="currentColor"
-                          viewBox="0 0 20 20"
-                        >
-                          <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
-                          <path
-                            fillRule="evenodd"
-                            d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                        {Number(video.viewCount).toLocaleString()} views
-                      </span>
-                      <span className="text-blue-600">
-                        {video.channelTitle}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              ))}
+    <div className="mt-12 bg-gray-50 p-6 rounded-lg border border-gray-200">
+    <h3 className="text-xl font-semibold mb-6 text-gray-800">
+      Competitor Video Analysis
+    </h3>
+    <div className="overflow-x-auto pb-4">
+      <div className="flex gap-6 min-w-min">
+        {ytvideo.map((video, index) => (
+          <div
+            key={index}
+            className="bg-white rounded-lg border border-gray-100 overflow-hidden hover:shadow-lg transition-all w-80 flex-shrink-0"
+          >
+            <div className="relative pb-[56.25%] h-0">
+              <iframe
+                className="absolute top-0 left-0 w-full h-full"
+                src={`https://www.youtube.com/embed/${getVideoId(
+                  video.videoUrl
+                )}`}
+                title={video.title}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <div className="p-4">
+              <h4 className="font-medium text-gray-800 mb-2 line-clamp-2">
+                {video.title}
+              </h4>
+              <div className="flex items-center justify-between text-sm text-gray-600">
+                <span className="flex items-center">
+                  <svg
+                    className="w-4 h-4 mr-1"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                    <path
+                      fillRule="evenodd"
+                      d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                  {Number(video.viewCount).toLocaleString()} views
+                </span>
+                <span className="text-blue-600">
+                  {video.channelTitle}
+                </span>
+              </div>
             </div>
           </div>
-        )}
+        ))}
+      </div>
+    </div>
+  </div>
+      )}
       </div>
     </div>
   );

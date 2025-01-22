@@ -9,12 +9,13 @@ import Trends from "./Trends.jsx";
 import axios from "axios";
 import { useLocation } from "react-router-dom";
 import CustomerFeedback from "./effectivehook.jsx";
+
 const Layout = () => {
   const location = useLocation();
   const receivedData = location.state; // Access the passed data
 
   console.log(receivedData);
-  
+
   // Accessing raw data with optional chaining
   const raw =
     receivedData?.outputState?.data?.outputs?.[0]?.outputs?.[0]?.results?.message?.data?.text || "";
@@ -36,6 +37,12 @@ const Layout = () => {
       setPassage(data.wordcloud);
     }
   }, [data]);
+
+  console.log("searchQuery data", receivedData?.outputState.searchQuery);
+
+  const searchQuery = [receivedData?.outputState.searchQuery + " competitors ads"];
+
+  console.log("searchQuery", searchQuery);
 
   const generateWordCloud = async () => {
     try {
@@ -65,7 +72,7 @@ const Layout = () => {
       setLoading(true);
 
       const response = await axios.post("http://localhost:5000/fitness-videos", {
-        data: JSON.stringify(data.competitorlist),
+        data: JSON.stringify(data.competitorlist || searchQuery || []),
       });
       console.log(response);
       const videoData = Array.isArray(response.data) ? response.data : [];
@@ -108,6 +115,7 @@ const Layout = () => {
         <Competitors 
         data={data} 
         ytvideo={Array.isArray(ytvideo) ? ytvideo : []}
+        loading={loading}
       />
         <Trends data={data} />
         <Insights data={data} wordCloudImage={wordCloudImage} />

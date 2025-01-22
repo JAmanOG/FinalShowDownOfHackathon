@@ -1,9 +1,11 @@
 const axios = require('axios');
 
 // Function to fetch search results based on query
+// Function to fetch search results based on query
 const searchVideos = async (query) => {
   const API_KEY = 'AIzaSyCsg8OuEdW3h1kwRIDI-SIkGenrumDn-Vk';
-  const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${query}&type=video&key=${API_KEY}`;
+  const maxResults = 20; // Maximum allowed by YouTube API
+  const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${query}&type=video&maxResults=${maxResults}&key=${API_KEY}`;
   
   try {
     const response = await axios.get(url);
@@ -30,35 +32,83 @@ const getVideoDetails = async (videoIds) => {
 };
 
 // Function to search for fitness videos and sort by view count
+// const getFitnessVideosSortedByViews = async (input) => {
+//   try {
+//     console.log('Input type:', typeof input);
+//     console.log('Input value:', input);
+
+//     if (!Array.isArray(input) || input.length === 0) {
+//       throw new Error("Input is not an array or is empty.");
+//     }
+
+//     const allVideoIds = (
+//       await Promise.all(input.map(searchVideos))
+//     ).flat();
+//     const videoDetails = await getVideoDetails(allVideoIds);
+
+//     const sortedVideos = videoDetails.sort((a, b) => b.statistics.viewCount - a.statistics.viewCount);
+
+//     return sortedVideos.map(video => ({
+//       title: video.snippet.title,
+//       description: video.snippet.description,
+//       viewCount: parseInt(video.statistics.viewCount, 20),
+//       channelTitle: video.snippet.channelTitle,
+//       thumbnailUrl: video.snippet.thumbnails.high.url,
+//       videoUrl: `https://www.youtube.com/watch?v=${video.id}`,
+//     }));
+//   } catch (error) {
+//     console.error("Error fetching fitness videos:", error.message);
+//     return [];
+//   }
+// };
+
+// Function to search for fitness videos and sort by views and likes
 const getFitnessVideosSortedByViews = async (input) => {
-  // Step 1: Search for fitness videos
-  const videoIds = await searchVideos(input);
+  try {
+    console.log('Input type:', typeof input);
+    console.log('Input value:', input);
 
-  // Step 2: Get video details (including view count)
-  const videoDetails = await getVideoDetails(videoIds);
+    if (!Array.isArray(input) || input.length === 0) {
+      throw new Error("Input is not an array or is empty.");
+    }
 
-  // Step 3: Sort the videos by view count
-  const sortedVideos = videoDetails.sort((a, b) => b.statistics.viewCount - a.statistics.viewCount);
+    const allVideoIds = (
+      await Promise.all(input.map(searchVideos))
+    ).flat();
+    const videoDetails = await getVideoDetails(allVideoIds);
 
-  // Return sorted videos
-  return sortedVideos.map(video => ({
-    title: video.snippet.title,
-    description: video.snippet.description,
-    viewCount: video.statistics.viewCount,
-    channelTitle: video.snippet.channelTitle,
-    thumbnailUrl: video.snippet.thumbnails.high.url,
-    videoUrl: `https://www.youtube.com/watch?v=${video.id}`,
-  }));
+    // Calculate engagement score based on views and likes
+    const sortedVideos = videoDetails.sort((a, b) => {
+      const aViews = parseInt(a.statistics.viewCount) || 0;
+      const bViews = parseInt(b.statistics.viewCount) || 0;
+      const aLikes = parseInt(a.statistics.likeCount) || 0;
+      const bLikes = parseInt(b.statistics.likeCount) || 0;
+      
+      // Create weighted score (70% views, 30% likes)
+      const aScore = (aViews * 0.7) + (aLikes * 0.3);
+      const bScore = (bViews * 0.7) + (bLikes * 0.3);
+      
+      return bScore - aScore;
+    });
+
+    return sortedVideos.map(video => ({
+      title: video.snippet.title,
+      description: video.snippet.description, 
+      viewCount: parseInt(video.statistics.viewCount, 10),
+      likeCount: parseInt(video.statistics.likeCount, 10) || 0,
+      channelTitle: video.snippet.channelTitle,
+      thumbnailUrl: video.snippet.thumbnails.high.url,
+      videoUrl: `https://www.youtube.com/watch?v=${video.id}`,
+      engagementScore: (
+        parseInt(video.statistics.viewCount, 10) * 0.7 + 
+        (parseInt(video.statistics.likeCount, 10) || 0) * 0.3
+      ).toFixed(2)
+    }));
+  } catch (error) {
+    console.error("Error fetching fitness videos:", error.message);
+    return [];
+  }
 };
-
-// Call the function
-// getFitnessVideosSortedByViews()
-//   .then(sortedVideos => {
-//     console.log('Sorted Fitness Videos by View Count:', sortedVideos);
-//   })
-//   .catch(error => {
-//     console.error("Error:", error);
-//   });
 
 module.exports = {
   searchVideos,

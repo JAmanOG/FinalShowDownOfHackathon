@@ -339,6 +339,7 @@ const Insights = ({ data, wordCloudImage }) => {
                             item.sentiment ||
                             item.company ||
                             item.metric ||
+                            item.title ||
                             item.trend}
                         </span>
                         <span className="text-sm font-medium text-blue-600">
